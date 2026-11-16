@@ -1,13 +1,13 @@
 # ep-001 — claims to data
 
 Every number in the published text, mapped to the row or log line it comes from.
-Checked on 2026-11-16 against `results_summary.csv`, `quality.csv` and the files in `logs/`
+Checked on 2026-11-16 (texts as corrected in the articles repo, commit `776ed1b`) against `results_summary.csv`, `quality.csv` and the files in `logs/`
 (regenerate the CSVs with `python3 scripts/build_csv.py`). Ratios are recomputed from the means in `results_summary.csv`.
 
 Key to the "Where" column: `S:<session>/<run_id>/<test>` = a row of `results_summary.csv` (column `mean_ts` unless stated);
 `Q:<session>/<check>/<placement>/<metric>` = a row of `quality.csv`; a path = a file in this folder.
 Status: **OK** = matches the data · **EXT** = not a measurement of this bench (declared by the source article or an external spec) ·
-**NOTES** = recorded in the lab notes at the time, no raw log in this folder · **FIX** = does not match the data (see the end).
+**NOTES** = recorded in the lab notes at the time, no raw log in this folder. Wide tables in the lab notes are published as images; the values in their alt text were checked like the body text, and the session and run names their captions cite exist in `results_summary.csv` / `quality.csv`.
 
 Sessions: `n` = `2026-11-02-night` (desktop, RTX 3080), `day` = `2026-11-02-day` (desktop, CPU only),
 `c` = `2026-11-03-clean` (Mac reference), `am` = `2026-11-03-am` (Mac), `m1` = `2026-11-02` (Mac).
@@ -37,7 +37,7 @@ Sessions: `n` = `2026-11-02-night` (desktop, RTX 3080), `day` = `2026-11-02-day`
 | Identical answers on the RTX 3080 (ncmoe 20 vs 28) | word-for-word | Q:n/greedy-1 and greedy-2/ncmoe28/identical_prefix_chars | 799 of 799, 706 of 706 | OK |
 | Mac memory in use | "up to about 20 GB" | `max_rss_gib`, Mac rows of `results_summary.csv` | max 19.26 GiB = 20.7 GB | OK |
 | Reading speed | ~5–6 t/s | Brysbaert (2019), 238 words/min × ~1.3 tokens/word | — | EXT |
-| Tested on | "November 2, 2026" | dates in `manifest.yaml` | desktop runs 2026-11-02; Mac reference session and Q8_0 check 2026-11-03 | see note 5 |
+| Tested on | November 2–3, 2026 | dates in `manifest.yaml` | desktop runs 2026-11-02; Mac reference session and Q8_0 check 2026-11-03 | OK |
 
 ## Part B1 — setup, Mac and CPU baselines
 
@@ -45,7 +45,7 @@ Sessions: `n` = `2026-11-02-night` (desktop, RTX 3080), `day` = `2026-11-02-day`
 |---|---|---|---|---|
 | XDA table (27B 38.83/0.75; 35B ncmoe 0 109.66/4.02; ncmoe 28 341.37/32.82; sizes 14.37/16.50 GiB) | | source article | — | EXT |
 | Ratios from XDA table | 8.2× tg, 3.1× pp | 32.82/4.02, 341.37/109.66 | 8.16, 3.11 | OK (computed) |
-| Model structure | 40 layers, 256 experts, 8 active | `model-metadata.txt` (GGUF header) | block_count 40, expert_count 256, expert_used_count 8 | OK, see note 4 |
+| Model structure | 40 layers, 256 experts, 8 active [GGUF metadata] | `model-metadata.txt` (GGUF header) | block_count 40, expert_count 256, expert_used_count 8 | OK |
 | Reading speed | 238 words/min | Brysbaert (2019) | — | EXT |
 | Mac hardware (Mac16,6, 12P+4E, 40-core GPU, 48 GB) | | `logs/mac/env-hardware.txt` | as stated | OK |
 | Metal working set | 40,200 MB | any `logs/mac/*/raw/*.stderr.txt` | 40200.90 MB | OK |
@@ -54,7 +54,7 @@ Sessions: `n` = `2026-11-02-night` (desktop, RTX 3080), `day` = `2026-11-02-day`
 | CUDA-visible VRAM | 11,887 MiB | night `raw/*.stderr.txt` | 11887 MiB | OK |
 | GPU in use with server stopped | 479 MiB | `logs/desktop/2026-11-02-night/night.log` | 479 MiB | OK |
 | Clean-session idle floor | load ≥ 1.44 (1.44–1.80), CPU 98–99 % idle | `scripts/original/mac-clean.sh` comment (measured 19:47–19:50, before the sampler started) | 1.44–1.80, 97.8–99.4 % | NOTES |
-| Day CPU run, load before the run | 2.28 | `logs/desktop/2026-11-02-day/raw/desktop-cpu6-d0.env.txt` | **2.24** (10:54:00) | **FIX** (note 3) |
+| Day CPU run, load before the run | 2.24 | `logs/desktop/2026-11-02-day/raw/desktop-cpu6-d0.env.txt` | 2.24 (10:54:00) | OK |
 | llama.cpp release / commit | b12034, `1c5ed702c…` | every JSON (`build_number`, `build_commit`) | 12034, 1c5ed702c | OK |
 | Model files | 17,730,509,792 B (16.51 GiB); 15,440,005,344 B (14.38 GiB); revisions | `manifest.yaml` › models | as stated | OK |
 | Repetitions | 5 at d0, 3 at 16k (clean), 3 for desktop CPU/dense | `n_reps` in `results_summary.csv` | as stated | OK |
@@ -62,14 +62,14 @@ Sessions: `n` = `2026-11-02-night` (desktop, RTX 3080), `day` = `2026-11-02-day`
 | Mac clean table (18 values ± sd) | 1661.91 … 18.41 | S:c/mac-*/pp512, tg128 | all match to 2 decimals | OK |
 | Anomalous repetition, flag at 16k | 30.1, 41.3, 41.8; median 41.3 | `results.csv` rows S:c/mac-ncmoe28-d16k/tg128 | 30.08, 41.26, 41.84 | OK |
 | Max RSS, clean | 16.5–19.2 GiB (35B), 14.6–16.0 GiB (dense) | `max_rss_gib`, S:c rows | 16.50–19.25, 14.56–15.98 | OK |
-| Peak memory footprint | 0.4–3.3 GiB | `peak_footprint_gib`, all Mac rows | **0.41–3.11 GiB** (= 0.44–3.34 GB) | **FIX** (note 2) |
+| Peak memory footprint | 0.41–3.11 GiB | `peak_footprint_gib`, all Mac rows | 0.41–3.11 GiB | OK |
 | Three-session table (36 values) | | S:m1, S:am, S:c | all match | OK |
 | Noise on GPU path | −2 % tg, 0 % pp (am → clean) | S:am vs S:c mac-gpu-d0 | −2.3 %, +0.07 % | OK |
 | Noise on CPU paths | +62 % CPU only, +51 % flag | S:am vs S:c mac-cpu-d0 / mac-ncmoe28-d0 tg128 | +62.4 %, +50.8 % | OK |
 | Nov 2 all-GPU prompt | −21 % vs clean | S:m1 vs S:c mac-gpu-d0/pp512 | −20.6 % | OK |
 | Largest between-session move | +112 % | S:m1 vs S:c mac-cpu-d0/tg128 | 22.54 → 47.79 = +112 % | OK |
 | Mac slowdown, clean session | 1.94× / 1.93× tg; 1.76× on the 16k median; 2.64× / 1.81× pp | S:c mac-gpu ÷ mac-ncmoe28 | 1.938, 1.931, 72.86/41.26 = 1.766, 2.639, 1.813 | OK |
-| Mac slowdown across three sessions | "1.9–3× slower, at every depth and for both metrics" | S:m1, S:am, S:c mac-gpu ÷ mac-ncmoe28 | generation 1.93–2.99×; **prompt 1.70–2.82×** (1.70× at 16k on Nov 2 and Nov 3 am) | **FIX** (note 1) |
+| Mac slowdown across three sessions | 1.9–3× in generation, 1.7–2.8× in prompt processing | S:m1, S:am, S:c mac-gpu ÷ mac-ncmoe28 | generation 1.93–2.99×; prompt 1.70–2.82× | OK |
 | Flag ≈ CPU only at d0; flag faster at 16k | 47.79 vs 46.10; 37.73 (median 41.3) vs 24.62 | S:c rows | as stated | OK |
 | Flag on Mac across sessions | 30.58–46.10 t/s | S:m1, S:am, S:c mac-ncmoe28-d0/tg128 | 34.53, 30.58, 46.10 | OK |
 | All experts on CPU | 25.81 t/s | S:c/mac-cmoe-d0/tg128 | 25.81 ± 0.22 | OK |
@@ -83,7 +83,7 @@ Sessions: `n` = `2026-11-02-night` (desktop, RTX 3080), `day` = `2026-11-02-day`
 |---|---|---|---|---|
 | Window | 22:15–22:48 CET | `night.log` | 22:15:00–22:48:46 | OK |
 | VRAM ballast; free before 8 GB phase | 3,092,840,448 B; 8,192 MiB | `night.log` | as stated | OK |
-| Bandwidth RTX 3080 / RTX 3070 Mobile | 760 / 448 GB/s | NVIDIA specifications (not measured) | — | EXT (note 6) |
+| Memory bandwidth RTX 3080 12 GB / RTX 3070 Laptop | ~912 / 448 GB/s (384-bit at 19 Gbps, 256-bit at 14 Gbps) | vendor specifications, linked in the text; not measured | — | EXT |
 | 12 GB table (pp, tg, 16k, VRAM used ~7.1…~10.3) | | S:n/12g-* rows, `vram_used_gib` | all match | OK |
 | 8 GB table (pp, tg, 16k, VRAM used ~5.7…~7.2) | | S:n/8g-* rows, `vram_used_gib` | all match | OK |
 | Sweep: ncmoe 4–24 do not fit at 8 GB | | S:n/8g-ncmoe4…24 status failed | 6 of 6 failed | OK |
@@ -95,7 +95,7 @@ Sessions: `n` = `2026-11-02-night` (desktop, RTX 3080), `day` = `2026-11-02-day`
 | Auto-fit vs best at 12 GB | 48.69 vs 47.79; +25 % pp | S:n/12g-fit vs 12g-ncmoe20 | +25.4 % pp | OK |
 | Container memory peak | 0.3–0.9 GiB | `raw/*.mempeak.bytes` (successful runs) | 0.29–0.91 GiB | OK |
 | Mac RSS (Nov 2 session) | 16.6–18.8 GiB at d0, up to 19.0 at 16k | `max_rss_gib`, S:m1 35B rows | 16.56–18.77; 18.95 | OK |
-| Recap: Mac across three sessions | "1.9–3× across three sessions" | as B1 | true for generation only | **FIX** (note 1) |
+| Recap: Mac across three sessions | 1.9–3× generation, 1.7–2.8× prompt | as B1 | as B1 | OK |
 
 ## Part B3 — quality, auto-fit, limits, verdict
 
@@ -117,22 +117,17 @@ Sessions: `n` = `2026-11-02-night` (desktop, RTX 3080), `day` = `2026-11-02-day`
 | OOM crash | `8g-dense-ngl32`, `ggml_cuda_mul_mat_q`, `mmq.cu:283`, segfault | `logs/desktop/2026-11-02-night/raw/8g-dense-ngl32.stderr.txt`, `cmd.txt` rc=139 | as stated | OK |
 | Limits: Mac noise | +62 %, +51 %, −2 % | as B1 | as B1 | OK |
 | Verdict items | 36 t/s; 2.3× (2.2× at 12 GB); ~1.1×; 3.8×; 9.4; 47.8; 3.1; 19.8; 38.0 vs 36.1 | as above | as above | OK |
-| Verdict item 5 | "≈1.9× … 1.8–2.6× (clean); 1.9–3× across three sessions" | as B1 | generation only | **FIX** (note 1) |
+| Verdict item 5 | ≈1.9× / 1.8–2.6× (clean); across sessions 1.9–3× generation, 1.7–2.8× prompt | as B1 | as B1 | OK |
 
-## Items to fix (status at 2026-11-16)
+## Corrections applied before publication (2026-11-16)
 
-1. **Mac slowdown across the three sessions — "1.9–3×, at every depth and for both metrics" (B1 § 6).**
-   Prompt processing at depth 16384 was 1.70× slower on Nov 2 (701.41 / 413.79) and 1.70× on Nov 3 morning (809.13 / 475.61).
-   Correct range across sessions: generation 1.93–2.99×, prompt processing 1.70–2.82×; both metrics together **1.7–3×**.
-   The same "1.9–3× across three sessions" in the B2 recap, B3 verdict item 5 and the changelogs is correct only if read as
-   generation. Suggested text: "1.9–3× slower in generation and 1.7–2.8× in prompt processing across three sessions".
-2. **Peak memory footprint "0.4–3.3 GiB" (B1 § 6, Memory).** The raw files give 0.41–3.11 GiB (0.44–3.34 GB): the upper value
-   is in GB, not GiB. Suggested: "0.4–3.1 GiB".
-3. **Day CPU run, "1-min load 2.28 before the run" (B1 § 3 hardware card and § 7 table).** The only logged value is 2.24
-   (`uptime` at 10:54:00, `desktop-cpu6-d0.env.txt`). Suggested: "2.24".
-4. **"[measured: llama-bench model metadata]" (B1 § 1).** The values (40 layers, 256 experts, 8 active) are right, but llama-bench
-   does not print them; they come from the GGUF header (`model-metadata.txt`). Suggested tag: "[measured: GGUF metadata]".
-5. **"Tested on … November 2, 2026" (verdict card, all parts).** The desktop runs are from Nov 2; the Mac figures used in the text
-   (clean session) and the Q8_0 check are from Nov 3. Suggested: "November 2–3, 2026".
-6. **RTX 3080 / RTX 3070 Mobile bandwidth (B2 § 8).** 760 and 448 GB/s are vendor specifications, not measurements: fine as
-   context, but the source should be cited.
+The first check of the drafts found six points; all were corrected in the article texts before publication:
+
+1. Mac slowdown across the three sessions: was "1.9–3×, for both metrics"; prompt processing at 16k was 1.70× on Nov 2 and Nov 3 morning. Now split: 1.9–3× in generation, 1.7–2.8× in prompt processing (B1, B2 recap, B3 verdict).
+2. macOS peak memory footprint: was "0.4–3.3 GiB" (the upper value was in GB); now 0.41–3.11 GiB (B1).
+3. Day CPU run load: was 2.28, not in any log; now 2.24, the logged value (B1).
+4. Model structure: tag was "llama-bench model metadata"; the values come from the GGUF header, now tagged "GGUF metadata" (B1).
+5. Test dates: were "November 2"; the Mac reference session and the Q8_0 check are from November 3. Now "November 2–3" (A, B1–B3).
+6. GPU memory bandwidth (B2): was 760 / 448 GB/s without a source; 760 GB/s is the RTX 3080 10 GB. The tested card is the 12 GB model (384-bit bus), about 912 GB/s. Both figures are now given as vendor specifications with links, not as measurements.
+
+No measured value in this folder changed. Status: every number in the published texts matches the data or is marked EXT/NOTES above.

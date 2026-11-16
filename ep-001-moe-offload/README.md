@@ -7,7 +7,16 @@ faster than I can read" — [source](https://www.xda-developers.com/i-stopped-th
 the no-flag "before" does not load on Linux (out of memory); against the most whole layers that fit (`-ngl 16`, 15.85 t/s)
 the flag's gain is 2.28×, not the 8× implied by the article's table.
 
-Articles: Part A {PART_A_URL} · Lab notes {PART_B1_URL} · {PART_B2_URL} · {PART_B3_URL}
+## Articles
+
+| Part | Medium | Substack |
+|---|---|---|
+| Part A — the short version | published 2026-11-17: {EP01_A_MEDIUM_URL} | published 2026-11-17: {EP01_A_SUBSTACK_URL} |
+| Lab notes, part 1 — setup, Mac and CPU baselines | published 2026-11-18: {EP01_B1_MEDIUM_URL} | published 2026-11-18: {EP01_B1_SUBSTACK_URL} |
+| Lab notes, part 2 — RTX 3080, 12 GB and emulated 8 GB | published 2026-11-19: {EP01_B2_MEDIUM_URL} | published 2026-11-19: {EP01_B2_SUBSTACK_URL} |
+| Lab notes, part 3 — quality, `--fit` default, verdict | published 2026-11-20: {EP01_B3_MEDIUM_URL} | published 2026-11-20: {EP01_B3_SUBSTACK_URL} |
+
+Links are filled in after each release. Error reports, with numbers: as a GitHub Issue in this repository (https://github.com/antoniolore/ai-lab/issues) or in the comments of the articles.
 
 ## Contents
 

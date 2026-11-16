@@ -1,11 +1,20 @@
-# Debunking AI — raw data
+# ai-lab
 
-Raw data, commands and scripts behind each episode of *Debunking AI* (working title): sensational claims about AI, rerun
-with reproducible tests on stated hardware. Every published number links back to a row or a log file here.
+Raw data, scripts and protocols behind the AI-claims reruns by Antonio Lorè: sensational claims about AI, rerun with
+reproducible tests on stated hardware. Every published number links back to a row or a log file here.
 
-| Episode | Claim | Verdict | Articles | Data |
+## Articles
+
+| Episode | Topic | Medium | Substack | Data |
 |---|---|---|---|---|
-| ep-001 | XDA Developers, 2026-10-22: one llama.cpp flag (`--n-cpu-moe`) lets an 8 GB GPU run a 35B MoE model "faster than I can read" | True with asterisks | {PART_A_URL} · lab notes {PART_B1_URL}, {PART_B2_URL}, {PART_B3_URL} | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
+| ep00 | Glossary: what "7B", "4-bit" and "MoE" actually mean | [Medium](https://medium.com/@antonio.lore/what-7b-4-bit-and-moe-actually-mean-an-ai-glossary-for-checking-viral-claims-b642abf6d063) | — | none (no test) |
+| ep01 Part A | One llama.cpp flag (`--n-cpu-moe`), an 8 GB GPU and a 35B MoE model. Verdict: True with asterisks | published 2026-11-17: {EP01_A_MEDIUM_URL} | published 2026-11-17: {EP01_A_SUBSTACK_URL} | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
+| ep01 Lab notes 1 | Setup, Mac and CPU baselines | published 2026-11-18: {EP01_B1_MEDIUM_URL} | published 2026-11-18: {EP01_B1_SUBSTACK_URL} | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
+| ep01 Lab notes 2 | RTX 3080 at 12 GB and emulated 8 GB | published 2026-11-19: {EP01_B2_MEDIUM_URL} | published 2026-11-19: {EP01_B2_SUBSTACK_URL} | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
+| ep01 Lab notes 3 | Quality, `--fit` default, verdict | published 2026-11-20: {EP01_B3_MEDIUM_URL} | published 2026-11-20: {EP01_B3_SUBSTACK_URL} | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
+
+Links marked "published <date>" are filled in after each release. Every code or data folder in this repository has a README with
+the links to its articles.
 
 ## Layout of an episode folder
 
@@ -43,4 +52,4 @@ for commentary.
 ## Corrections
 
 If an error is shown, the episode folder gets a dated entry in `CHANGELOG.md` and the article a dated correction note.
-Nothing is changed silently. Error reports, with numbers: {CORRECTIONS_CONTACT}.
+Nothing is changed silently. Error reports, with numbers: as a GitHub Issue in this repository (https://github.com/antoniolore/ai-lab/issues) or in the comments of the articles.
