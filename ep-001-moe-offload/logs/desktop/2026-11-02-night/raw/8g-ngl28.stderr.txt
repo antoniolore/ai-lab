@@ -1,0 +1,10 @@
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 11887 MiB):
+  Device 0: NVIDIA GeForce RTX 3080, compute capability 8.6, VMM: yes, VRAM: 11887 MiB
+load_backend: loaded CUDA backend from /opt/llama/libggml-cuda.so
+load_backend: loaded RPC backend from /opt/llama/libggml-rpc.so
+load_backend: loaded CPU backend from /opt/llama/libggml-cpu-haswell.so
+ggml_backend_cuda_buffer_type_alloc_buffer: allocating 11258.46 MiB on device 0: cudaMalloc failed: out of memory
+ggml_backend_buft_alloc_buffer_n_default: failed to allocate CUDA0 buffer of size 11805348864
+llama_model_load: error loading model: unable to allocate CUDA0 buffer
+llama_model_load_from_file_impl: failed to load model
+llama_bench: error: failed to load model '/models/Qwen3.6-35B-A3B-UD-IQ4_XS.gguf'

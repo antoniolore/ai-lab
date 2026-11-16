@@ -1,0 +1,21 @@
+
+
+<think>
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Topic:** Mixture of Experts (MoE) language models vs. Dense models
+   - **Specifics:** MoE with 35B parameters runs faster than a dense model with 27B parameters on the same hardware
+   - **Target Audience:** General audience (needs to be accessible, avoid excessive jargon, use analogies if helpful)
+   - **Format:** Short technical explanation
+   - **Question:** Why can this happen?
+
+2.  **Identify Key Concepts:**
+   - Parameter count vs. active parameters/compute
+   - Mixture of Experts (MoE) architecture
+   - Sparse activation / conditional computation
+   - Hardware utilization (memory bandwidth, compute efficiency)
+   - Inference vs. training (focus on inference since it's about running faster)
+   - Routing mechanism (gating network)
+  
+

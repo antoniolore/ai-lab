@@ -1,0 +1,7 @@
+Apple M4 Max
+51539607552
+      Model Identifier: Mac16,6
+      Chip: Apple M4 Max
+      Total Number of Cores: 16 (12 Performance and 4 Efficiency)
+      Memory: 48 GB
+      Total Number of Cores: 40

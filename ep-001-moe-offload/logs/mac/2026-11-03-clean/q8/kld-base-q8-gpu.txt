@@ -1,0 +1,29 @@
+0.23.459.254 I cmn          init: llama threadpool init, n_threads = 12
+0.23.564.592 I 
+0.23.564.843 I system_info: n_threads = 12 (n_threads_batch = 12) / 16 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | DOTPROD = 1 | LLAMAFILE = 1 | ACCELERATE = 1 | REPACK = 1 | 
+0.23.564.949 I perplexity: saving all logits to ~/moe-offload-lab/results-clean-2026-11-03/q8/kld-base-q8-gpu.bin
+0.23.564.955 I perplexity: tokenizing the input ..
+0.23.570.477 I perplexity: tokenization took 5.519 ms
+0.23.570.484 I perplexity: calculating perplexity over 7 chunks, n_ctx=512, batch_size=2048, n_seq=4
+0.25.043.347 I perplexity: 1.46 seconds per pass - ETA 0.03 minutes
+[1]3.0398,[2]6.8363,[3]6.8383,[4]6.8657,[5]7.3219,[6]8.6988,[7]8.6102,
+0.26.477.918 I Final estimate: PPL = 8.6102 +/- 0.55367
+
+       26.68 real         1.67 user         4.26 sys
+         33510850560  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              119696  page reclaims
+             2252049  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 124  voluntary context switches
+              143512  involuntary context switches
+         83704827631  instructions retired
+         24404923167  cycles elapsed
+          1952673584  peak memory footprint

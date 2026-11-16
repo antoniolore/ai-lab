@@ -1,0 +1,95 @@
+2026-11-02T11:26:39+0100 preflight night=2026-11-02 dry=1
+2026-11-02T11:26:39+0100 MemAvailable=34GiB (vLLM still up)
+2026-11-02T11:26:40+0100 dry-run: preflight OK, GPU free MiB now: 222
+2026-11-02T22:15:00+0100 preflight night=2026-11-02 dry=0
+2026-11-02T22:15:00+0100 MemAvailable=31GiB (vLLM still up)
+2026-11-02T22:15:00+0100 stopping vLLM
+ Container inference-server Stopping 
+ Container inference-server Stopped 
+2026-11-02T22:15:05+0100 VRAM used after stop: 479 MiB
+2026-11-02T22:15:05+0100 run 12g-article-ncmoe0: -ngl 99 -ncmoe 0 -d 0 -r 5
+2026-11-02T22:15:42+0100   12g-article-ncmoe0 failed rc=1 (recorded as a result)
+2026-11-02T22:15:42+0100 run 12g-article-ncmoe28: -ngl 99 -ncmoe 28 -d 0 -r 5
+2026-11-02T22:16:09+0100 run 12g-ncmoe4: -ngl 99 -ncmoe 4 -d 0 -r 5
+2026-11-02T22:16:11+0100   12g-ncmoe4 failed rc=1 (recorded as a result)
+2026-11-02T22:16:11+0100 run 12g-ncmoe8: -ngl 99 -ncmoe 8 -d 0 -r 5
+2026-11-02T22:16:13+0100   12g-ncmoe8 failed rc=1 (recorded as a result)
+2026-11-02T22:16:13+0100 run 12g-ncmoe12: -ngl 99 -ncmoe 12 -d 0 -r 5
+2026-11-02T22:16:15+0100   12g-ncmoe12 failed rc=1 (recorded as a result)
+2026-11-02T22:16:15+0100 run 12g-ncmoe16: -ngl 99 -ncmoe 16 -d 0 -r 5
+2026-11-02T22:16:19+0100   12g-ncmoe16 failed rc=1 (recorded as a result)
+2026-11-02T22:16:19+0100 run 12g-ncmoe20: -ngl 99 -ncmoe 20 -d 0 -r 5
+2026-11-02T22:16:40+0100 run 12g-ngl36: -ngl 36 -d 0 -r 5
+2026-11-02T22:16:43+0100   12g-ngl36 failed rc=1 (recorded as a result)
+2026-11-02T22:16:43+0100 run 12g-ngl32: -ngl 32 -d 0 -r 5
+2026-11-02T22:16:45+0100   12g-ngl32 failed rc=1 (recorded as a result)
+2026-11-02T22:16:45+0100 run 12g-ngl28: -ngl 28 -d 0 -r 5
+2026-11-02T22:16:47+0100   12g-ngl28 failed rc=1 (recorded as a result)
+2026-11-02T22:16:47+0100 run 12g-ngl24: -ngl 24 -d 0 -r 5
+2026-11-02T22:17:25+0100 run 12g-ngl20: -ngl 20 -d 0 -r 5
+2026-11-02T22:18:10+0100 run 12g-fit: -fitt 1024 -d 0 -r 5
+2026-11-02T22:18:39+0100 run 12g-ncmoe20-d16k: -ngl 99 -ncmoe 20 -d 16384 -r 3
+2026-11-02T22:19:18+0100 run 12g-article-ncmoe28-d16k: -ngl 99 -ncmoe 28 -d 16384 -r 3
+2026-11-02T22:20:07+0100 run 12g-ngl24-d16k: -ngl 24 -d 16384 -r 3
+2026-11-02T22:21:00+0100 run 12g-dense-ngl99: -ngl 99 -d 0 -r 3
+2026-11-02T22:21:29+0100   12g-dense-ngl99 failed rc=1 (recorded as a result)
+2026-11-02T22:21:29+0100 run 12g-dense-ngl56: -ngl 56 -d 0 -r 3
+2026-11-02T22:21:31+0100   12g-dense-ngl56 failed rc=1 (recorded as a result)
+2026-11-02T22:21:31+0100 run 12g-dense-ngl48: -ngl 48 -d 0 -r 3
+2026-11-02T22:21:35+0100   12g-dense-ngl48 failed rc=1 (recorded as a result)
+2026-11-02T22:21:35+0100 run 12g-dense-ngl40: -ngl 40 -d 0 -r 3
+ballast_bytes 3092840448 free_after 8589475840
+memory.used [MiB], memory.free [MiB]
+3696 MiB, 8192 MiB
+2026-11-02T22:23:09+0100 run 8g-article-ncmoe0: -ngl 99 -ncmoe 0 -d 0 -r 5
+2026-11-02T22:23:12+0100   8g-article-ncmoe0 failed rc=1 (recorded as a result)
+2026-11-02T22:23:12+0100 run 8g-article-ncmoe28: -ngl 99 -ncmoe 28 -d 0 -r 5
+2026-11-02T22:23:38+0100 run 8g-ncmoe4: -ngl 99 -ncmoe 4 -d 0 -r 5
+2026-11-02T22:23:40+0100   8g-ncmoe4 failed rc=1 (recorded as a result)
+2026-11-02T22:23:40+0100 run 8g-ncmoe8: -ngl 99 -ncmoe 8 -d 0 -r 5
+2026-11-02T22:23:42+0100   8g-ncmoe8 failed rc=1 (recorded as a result)
+2026-11-02T22:23:42+0100 run 8g-ncmoe12: -ngl 99 -ncmoe 12 -d 0 -r 5
+2026-11-02T22:23:45+0100   8g-ncmoe12 failed rc=1 (recorded as a result)
+2026-11-02T22:23:45+0100 run 8g-ncmoe16: -ngl 99 -ncmoe 16 -d 0 -r 5
+2026-11-02T22:23:47+0100   8g-ncmoe16 failed rc=1 (recorded as a result)
+2026-11-02T22:23:47+0100 run 8g-ncmoe20: -ngl 99 -ncmoe 20 -d 0 -r 5
+2026-11-02T22:23:49+0100   8g-ncmoe20 failed rc=1 (recorded as a result)
+2026-11-02T22:23:49+0100 run 8g-ncmoe24: -ngl 99 -ncmoe 24 -d 0 -r 5
+2026-11-02T22:23:52+0100   8g-ncmoe24 failed rc=1 (recorded as a result)
+2026-11-02T22:23:52+0100 run 8g-ncmoe32: -ngl 99 -ncmoe 32 -d 0 -r 5
+2026-11-02T22:24:20+0100 run 8g-ngl36: -ngl 36 -d 0 -r 5
+2026-11-02T22:24:22+0100   8g-ngl36 failed rc=1 (recorded as a result)
+2026-11-02T22:24:22+0100 run 8g-ngl32: -ngl 32 -d 0 -r 5
+2026-11-02T22:24:25+0100   8g-ngl32 failed rc=1 (recorded as a result)
+2026-11-02T22:24:25+0100 run 8g-ngl28: -ngl 28 -d 0 -r 5
+2026-11-02T22:24:27+0100   8g-ngl28 failed rc=1 (recorded as a result)
+2026-11-02T22:24:27+0100 run 8g-ngl24: -ngl 24 -d 0 -r 5
+2026-11-02T22:24:30+0100   8g-ngl24 failed rc=1 (recorded as a result)
+2026-11-02T22:24:30+0100 run 8g-ngl20: -ngl 20 -d 0 -r 5
+2026-11-02T22:24:32+0100   8g-ngl20 failed rc=1 (recorded as a result)
+2026-11-02T22:24:32+0100 run 8g-ngl16: -ngl 16 -d 0 -r 5
+2026-11-02T22:25:22+0100 run 8g-ngl12: -ngl 12 -d 0 -r 5
+2026-11-02T22:26:20+0100 run 8g-fit: -fitt 1024 -d 0 -r 5
+2026-11-02T22:26:54+0100 run 8g-ncmoe32-d16k: -ngl 99 -ncmoe 32 -d 16384 -r 3
+2026-11-02T22:27:47+0100 run 8g-article-ncmoe28-d16k: -ngl 99 -ncmoe 28 -d 16384 -r 3
+2026-11-02T22:28:36+0100 run 8g-ngl16-d16k: -ngl 16 -d 16384 -r 3
+2026-11-02T22:29:47+0100 run 8g-dense-ngl99: -ngl 99 -d 0 -r 3
+2026-11-02T22:29:49+0100   8g-dense-ngl99 failed rc=1 (recorded as a result)
+2026-11-02T22:29:49+0100 run 8g-dense-ngl56: -ngl 56 -d 0 -r 3
+2026-11-02T22:29:51+0100   8g-dense-ngl56 failed rc=1 (recorded as a result)
+2026-11-02T22:29:51+0100 run 8g-dense-ngl48: -ngl 48 -d 0 -r 3
+2026-11-02T22:29:53+0100   8g-dense-ngl48 failed rc=1 (recorded as a result)
+2026-11-02T22:29:53+0100 run 8g-dense-ngl40: -ngl 40 -d 0 -r 3
+2026-11-02T22:29:56+0100   8g-dense-ngl40 failed rc=1 (recorded as a result)
+2026-11-02T22:29:56+0100 run 8g-dense-ngl32: -ngl 32 -d 0 -r 3
+2026-11-02T22:30:03+0100   8g-dense-ngl32 failed rc=139 (recorded as a result)
+2026-11-02T22:30:03+0100 run 8g-dense-ngl24: -ngl 24 -d 0 -r 3
+2026-11-02T22:32:15+0100 qc ncmoe20
+2026-11-02T22:33:25+0100 qc ncmoe28
+2026-11-02T22:34:49+0100 qc cpu
+2026-11-02T22:46:17+0100 run cpu-d0: -ngl 0 -dev none -d 0 -r 3
+2026-11-02T22:47:34+0100 bench finished, restoring
+2026-11-02T22:47:34+0100 restore: starting vLLM (exit code was 0)
+ Container inference-server Starting 
+ Container inference-server Started 
+2026-11-02T22:48:46+0100 restore: inference server healthy and gateway answers

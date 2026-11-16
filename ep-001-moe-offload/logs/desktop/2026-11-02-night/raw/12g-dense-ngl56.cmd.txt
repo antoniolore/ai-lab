@@ -1,0 +1,2 @@
+llama-bench -m /models/Qwen3.6-27B-IQ4_XS.gguf -p 512 -n 128 -ctk q8_0 -ctv q8_0 -fa on -o json -ngl 56 -d 0 -r 3
+rc=1

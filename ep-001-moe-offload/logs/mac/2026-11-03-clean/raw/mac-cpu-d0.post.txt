@@ -1,0 +1,17 @@
+2026-11-03T19:02:28Z
+{ 6.50 3.50 2.51 }
+System-wide memory free percentage: 93%
+kern.memorystatus_vm_pressure_level: 1
+vm.swapusage: total = 0.00M  used = 0.00M  free = 0.00M  (encrypted)
+Now drawing from 'AC Power'
+Note: No thermal warning level has been recorded
+Note: No performance warning level has been recorded
+Note: No CPU power status has been recorded
+ %CPU COMM
+  0.7 bluetoothd
+  0.4 mds_stores
+  0.3 mds
+  0.2 WindowServer
+  0.2 com.apple.DriverKit-AppleBCMWLAN
+  0.2 sharingd
+  0.1 rapportd

@@ -1,0 +1,7 @@
+# never commit model weights, binaries or logit dumps
+*.gguf
+*.bin
+*.tar.gz
+*.safetensors
+__pycache__/
+.DS_Store

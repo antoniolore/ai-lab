@@ -1,0 +1,12 @@
+0.00.127.882 W llama_model_loader: tensor overrides to CPU are used with mmap enabled - consider using --load-mode none for better performance
+0.00.774.175 I cmn          init: llama threadpool init, n_threads = 12
+0.00.833.207 I 
+0.00.833.234 I system_info: n_threads = 12 (n_threads_batch = 12) / 16 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | DOTPROD = 1 | LLAMAFILE = 1 | ACCELERATE = 1 | REPACK = 1 | 
+0.00.833.238 I perplexity: tokenizing the input ..
+0.00.861.884 I perplexity: tokenization took 28.646 ms
+0.00.861.891 I perplexity: calculating perplexity over 16 chunks, n_ctx=2048, batch_size=2048, n_seq=1
+0.05.071.185 I perplexity: 4.21 seconds per pass - ETA 1.12 minutes
+[1]1.1514,[2]1.0885,[3]1.0669,[4]1.0602,[5]1.0541,[6]1.0491,[7]1.0513,[8]1.0524,[9]1.0480,[10]1.1224,[11]1.1162,[12]1.1081,[13]1.1048,[14]1.1005,[15]1.0970,[16]1.0948,
+0.58.492.114 I Final estimate: PPL = 1.0948 +/- 0.00562
+
+0.58.492.217 W ~llama_context:       MTL0 compute buffer size of 505.0039 MiB, does not match expectation of 501.0039 MiB

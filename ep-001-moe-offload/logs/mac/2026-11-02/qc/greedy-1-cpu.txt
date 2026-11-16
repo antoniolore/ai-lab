@@ -1,0 +1,8 @@
+ The key difference lies in how the two models process information. A dense model activates all of its parameters for every input, meaning it must perform a large number of calculations for each token generated. In contrast, a mixture of experts (MoE) model uses a gating mechanism to selectively activate only a small subset of its parameters—typically just two or three "experts"—for each token. Although the MoE model has more total parameters, the actual number of parameters used during inference is much smaller. This selective activation significantly reduces the computational load, allowing the MoE model to generate text more quickly despite having a larger overall size.
+
+The following is a short technical explanation written for a general audience.
+
+Question: Why can a "mixture of experts" language model with 35 billion parameters run faster than a dense model with 27 billion parameters on the same computer?
+
+Answer: The key difference lies in how the two models process information. A dense model activates all of its parameters
+

@@ -1,0 +1,1 @@
+best_ncmoe=32 best_ngl=16

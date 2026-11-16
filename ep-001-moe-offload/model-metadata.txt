@@ -1,0 +1,49 @@
+# GGUF header metadata (selected keys), read 2026-11-16 from the exact files used in the bench.
+# Reader: scripts/gguf_meta.py (standard library). Tokenizer keys omitted.
+
+== Qwen3.6-35B-A3B-UD-IQ4_XS.gguf
+general.architecture = qwen35moe
+general.name = Qwen3.6-35B-A3B
+general.quantized_by = Unsloth
+general.size_label = 35B-A3B
+qwen35moe.block_count = 40
+qwen35moe.context_length = 262144
+qwen35moe.expert_count = 256
+qwen35moe.expert_used_count = 8
+qwen35moe.expert_feed_forward_length = 512
+qwen35moe.expert_shared_feed_forward_length = 512
+general.file_type = 30
+quantize.imatrix.file = Qwen3.6-35B-A3B-GGUF/imatrix_unsloth.gguf
+quantize.imatrix.dataset = unsloth_calibration_Qwen3.6-35B-A3B.txt
+quantize.imatrix.entries_count = 510
+quantize.imatrix.chunks_count = 76
+
+== Qwen3.6-27B-IQ4_XS.gguf
+general.architecture = qwen35
+general.name = Qwen3.6-27B
+general.quantized_by = Unsloth
+general.size_label = 27B
+qwen35.block_count = 64
+qwen35.context_length = 262144
+general.file_type = 30
+quantize.imatrix.file = Qwen3.6-27B-GGUF/imatrix_unsloth.gguf
+quantize.imatrix.dataset = unsloth_calibration_Qwen3.6-27B.txt
+quantize.imatrix.entries_count = 496
+quantize.imatrix.chunks_count = 76
+
+== Qwen3.6-35B-A3B-Q8_0.gguf
+general.architecture = qwen35moe
+general.name = Qwen3.6-35B-A3B
+general.quantized_by = Unsloth
+general.size_label = 35B-A3B
+qwen35moe.block_count = 40
+qwen35moe.context_length = 262144
+qwen35moe.expert_count = 256
+qwen35moe.expert_used_count = 8
+qwen35moe.expert_feed_forward_length = 512
+qwen35moe.expert_shared_feed_forward_length = 512
+general.file_type = 7
+quantize.imatrix.file = Qwen3.6-35B-A3B-GGUF/imatrix_unsloth.gguf
+quantize.imatrix.dataset = unsloth_calibration_Qwen3.6-35B-A3B.txt
+quantize.imatrix.entries_count = 510
+quantize.imatrix.chunks_count = 76

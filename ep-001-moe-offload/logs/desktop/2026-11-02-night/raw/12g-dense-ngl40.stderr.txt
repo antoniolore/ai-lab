@@ -1,0 +1,5 @@
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 11887 MiB):
+  Device 0: NVIDIA GeForce RTX 3080, compute capability 8.6, VMM: yes, VRAM: 11887 MiB
+load_backend: loaded CUDA backend from /opt/llama/libggml-cuda.so
+load_backend: loaded RPC backend from /opt/llama/libggml-rpc.so
+load_backend: loaded CPU backend from /opt/llama/libggml-cpu-haswell.so

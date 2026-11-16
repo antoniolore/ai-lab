@@ -1,0 +1,2 @@
+~/moe-offload-lab/bin/llama-b12034/llama-bench -m ~/moe-offload-lab/models/Qwen3.6-35B-A3B-UD-IQ4_XS.gguf -p 512 -n 128 -ctk q8_0 -ctv q8_0 -fa on -o json -d 16384 -r 3 -ngl 99 -ncmoe 99
+rc=0

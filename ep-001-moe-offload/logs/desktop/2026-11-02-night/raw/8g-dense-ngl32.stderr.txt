@@ -1,0 +1,24 @@
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 11887 MiB):
+  Device 0: NVIDIA GeForce RTX 3080, compute capability 8.6, VMM: yes, VRAM: 11887 MiB
+load_backend: loaded CUDA backend from /opt/llama/libggml-cuda.so
+load_backend: loaded RPC backend from /opt/llama/libggml-rpc.so
+load_backend: loaded CPU backend from /opt/llama/libggml-cpu-haswell.so
+CUDA error: out of memory
+  current device: 0, in function ggml_cuda_mul_mat_q at /__w/llama.cpp/llama.cpp/ggml/src/ggml-cuda/mmq.cu:283
+  cudaGetLastError()
+/__w/llama.cpp/llama.cpp/ggml/src/ggml-cuda/ggml-cuda.cu:110: CUDA error
+/opt/llama/libggml-base.so.0(+0x1694b)[0x7c481318294b]
+/opt/llama/libggml-base.so.0(+0x16dcc)[0x7c4813182dcc]
+/opt/llama/libggml-base.so.0(ggml_abort+0x15b)[0x7c4813182fab]
+/opt/llama/libggml-cuda.so(_Z15ggml_cuda_errorPKcS0_S0_iS0_+0xb7)[0x7c48074e98b7]
+/opt/llama/libggml-cuda.so(_Z19ggml_cuda_mul_mat_qR25ggml_backend_cuda_contextPK11ggml_tensorS3_S3_PS1_PK29ggml_cuda_mm_fusion_args_host+0x21ba)[0x7c4807551cba]
+/opt/llama/libggml-cuda.so(+0x302a0b)[0x7c4807502a0b]
+/opt/llama/libggml-base.so.0(ggml_backend_sched_graph_compute_async+0x3f4)[0x7c48131a1a24]
+/opt/llama/libllama.so.0(_ZN13llama_context13graph_computeEP11ggml_cgraphb+0xdb)[0x7c481285cdfb]
+/opt/llama/libllama.so.0(_ZN13llama_context14process_ubatchERK12llama_ubatch14llm_graph_typeP22llama_memory_context_iR11ggml_status+0x136)[0x7c4812860416]
+/opt/llama/libllama.so.0(_ZN13llama_context6decodeERK15llama_batch_ext+0x5b6)[0x7c481286a5a6]
+/opt/llama/libllama-bench-impl.so(+0x1d473)[0x7c4813735473]
+/opt/llama/libllama-bench-impl.so(_Z11llama_benchiPPc+0xe98)[0x7c4813744888]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca)[0x7c481327d1ca]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b)[0x7c481327d28b]
+/opt/llama/llama-bench(+0x12a5)[0x5aa438a6c2a5]

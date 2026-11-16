@@ -1,0 +1,5 @@
+The following is a short technical explanation written for a general audience.
+
+Question: Why can a "mixture of experts" language model with 35 billion parameters run faster than a dense model with 27 billion parameters on the same computer?
+
+Answer:

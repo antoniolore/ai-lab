@@ -1,0 +1,25 @@
+placement,depth,test,mean_tokens_per_s,sd,median,reps
+All on GPU,0,pp512,1661.91,4.68,1661.57,5
+All on GPU,0,tg128,89.35,0.22,89.42,5
+All on GPU,16384,pp512,938.68,2.01,937.54,3
+All on GPU,16384,tg128,72.86,1.55,72.28,3
+-ncmoe 28 (article),0,pp512,629.83,11.73,632.26,5
+-ncmoe 28 (article),0,tg128,46.10,1.97,45.21,5
+-ncmoe 28 (article),16384,pp512,517.86,3.54,515.96,3
+-ncmoe 28 (article),16384,tg128,37.73,6.63,41.26,3
+All experts on CPU (-ncmoe 99),0,pp512,499.06,12.14,503.78,5
+All experts on CPU (-ncmoe 99),0,tg128,25.81,0.22,25.79,5
+All experts on CPU (-ncmoe 99),16384,pp512,432.71,5.43,429.75,3
+All experts on CPU (-ncmoe 99),16384,tg128,22.37,1.30,21.62,3
+Classic offload (-ngl 20),0,pp512,496.16,9.01,496.37,5
+Classic offload (-ngl 20),0,tg128,45.66,0.92,45.98,5
+Classic offload (-ngl 20),16384,pp512,407.46,3.25,406.75,3
+Classic offload (-ngl 20),16384,tg128,31.39,2.88,32.23,3
+CPU only,0,pp512,149.27,5.63,149.77,5
+CPU only,0,tg128,47.79,0.41,47.68,5
+CPU only,16384,pp512,41.30,0.56,41.42,3
+CPU only,16384,tg128,24.62,0.73,24.78,3
+"Dense 27B, all on GPU",0,pp512,233.48,17.68,233.54,5
+"Dense 27B, all on GPU",0,tg128,19.81,0.44,20.06,5
+"Dense 27B, all on GPU",16384,pp512,166.72,0.24,166.68,3
+"Dense 27B, all on GPU",16384,tg128,18.41,1.57,17.97,3

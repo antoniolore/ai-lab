@@ -1,0 +1,12 @@
+20:40:56 pre q8-base-gpu load=6.19 idle=98.97% swap=0.00M plevel=1
+20:41:24 q8 base gpu rc=0
+20:41:34 q8-gpu vs iq4-gpu rc=0
+20:41:42 q8-gpu vs iq4-ncmoe28 rc=0
+20:42:13 q8-gpu vs iq4-cpu rc=0
+20:42:13 post q8-gpu load=6.23 idle=98.91% swap=0.00M plevel=1
+poc/mac-clean.sh: line 34: 53123 Terminated: 15          ( while sleep 1; do
+    s=$(swap_mb); p=$(plevel); if [[ ${s%.*} -gt 0 || $p -ge 2 ]]; then
+        echo "$(date +%T) WATCHDOG kill llama-perplexity swap=${s}M plevel=$p" | tee -a "$G"; pkill -9 -f llama-perplexity; exit 0;
+    fi;
+done )
+q8gpu-exit=0

@@ -1,0 +1,47 @@
+19:50:34 pre mac-gpu-d0 load=1.48 idle=98.69% swap=0.00M plevel=1
+19:50:52 post mac-gpu-d0 rc=0 load=1.48 idle=98.85% swap=0.00M plevel=1
+19:52:54 cooldown 121 s, load={ 0.30 1.16 1.51 } idle=98.86%
+19:52:54 pre mac-ncmoe28-d0 load=0.30 idle=99.26% swap=0.00M plevel=1
+19:53:16 post mac-ncmoe28-d0 rc=0 load=1.96 idle=99.14% swap=0.00M plevel=1
+19:55:29 cooldown 132 s, load={ 1.94 1.60 1.63 } idle=98.83%
+19:55:29 pre mac-cmoe-d0 load=1.94 idle=99.3% swap=0.00M plevel=1
+19:56:04 post mac-cmoe-d0 rc=0 load=5.74 idle=99.3% swap=0.00M plevel=1
+19:59:02 cooldown 177 s, load={ 1.99 2.20 1.93 } idle=99.26%
+19:59:02 pre mac-nglhalf-d0 load=1.99 idle=98.35% swap=0.00M plevel=1
+19:59:26 post mac-nglhalf-d0 rc=0 load=5.19 idle=98.91% swap=0.00M plevel=1
+20:01:51 cooldown 144 s, load={ 1.85 2.41 2.10 } idle=97.49%
+20:01:51 pre mac-cpu-d0 load=1.85 idle=95.95% swap=0.00M plevel=1
+20:02:28 post mac-cpu-d0 rc=0 load=6.50 idle=96.29% swap=0.00M plevel=1
+20:04:53 cooldown 144 s, load={ 1.90 2.72 2.34 } idle=98.92%
+20:04:53 pre mac-dense-d0 load=1.90 idle=98.2% swap=0.00M plevel=1
+20:05:46 post mac-dense-d0 rc=0 load=1.07 idle=97.95% swap=0.00M plevel=1
+20:07:48 cooldown 121 s, load={ 1.17 1.99 2.09 } idle=99.9%
+20:07:48 pre mac-gpu-d16k load=1.17 idle=99.37% swap=0.00M plevel=1
+20:08:12 post mac-gpu-d16k rc=0 load=0.90 idle=95.2% swap=0.00M plevel=1
+20:10:14 cooldown 121 s, load={ 1.53 1.74 1.97 } idle=98.63%
+20:10:14 pre mac-ncmoe28-d16k load=1.53 idle=99.3% swap=0.00M plevel=1
+20:11:00 post mac-ncmoe28-d16k rc=0 load=3.41 idle=94.18% swap=0.00M plevel=1
+20:13:03 cooldown 122 s, load={ 1.67 1.82 1.96 } idle=98.94%
+20:13:03 pre mac-cmoe-d16k load=1.67 idle=99.14% swap=0.00M plevel=1
+20:14:03 post mac-cmoe-d16k rc=0 load=5.26 idle=98.24% swap=0.00M plevel=1
+20:16:06 cooldown 122 s, load={ 1.86 2.19 2.12 } idle=98.52%
+20:16:06 pre mac-nglhalf-d16k load=1.86 idle=98.69% swap=0.00M plevel=1
+20:17:01 post mac-nglhalf-d16k rc=0 load=5.16 idle=96.98% swap=0.00M plevel=1
+20:19:03 cooldown 121 s, load={ 1.77 2.37 2.24 } idle=99.6%
+20:19:03 pre mac-dense-d16k load=1.77 idle=98.24% swap=0.00M plevel=1
+20:21:08 post mac-dense-d16k rc=0 load=0.45 idle=97.61% swap=0.00M plevel=1
+20:23:10 cooldown 121 s, load={ 1.38 1.56 1.88 } idle=99.20%
+20:23:10 pre mac-cpu-d16k load=1.38 idle=97.89% swap=0.00M plevel=1
+20:28:21 post mac-cpu-d16k rc=0 load=12.35 idle=92.30% swap=0.00M plevel=1
+20:32:28 cooldown 245 s, load={ 1.93 4.73 4.23 } idle=98.63%
+20:32:28 suite done
+20:32:28 pre qc load=1.93 idle=99.14% swap=0.00M plevel=1
+20:39:33 mid qc load=12.25 idle=98.86% swap=0.00M plevel=1
+20:40:23 post qc load=10.45 idle=98.75% swap=0.00M plevel=1
+20:40:24 all done rc=0
+20:40:56 pre q8-base-gpu load=6.19 idle=98.97% swap=0.00M plevel=1
+20:41:24 q8 base gpu rc=0
+20:41:34 q8-gpu vs iq4-gpu rc=0
+20:41:42 q8-gpu vs iq4-ncmoe28 rc=0
+20:42:13 q8-gpu vs iq4-cpu rc=0
+20:42:13 post q8-gpu load=6.23 idle=98.91% swap=0.00M plevel=1

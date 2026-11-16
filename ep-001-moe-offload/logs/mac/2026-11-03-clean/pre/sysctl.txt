@@ -1,0 +1,2 @@
+vm.swapusage: total = 0.00M  used = 0.00M  free = 0.00M  (encrypted)
+vm.loadavg: { 1.35 1.70 1.82 }

@@ -1,0 +1,151 @@
+# ep-001 — llama.cpp MoE expert offload (`--n-cpu-moe`)
+# Provenance tags: verified = checked against a file or log in this folder (path given);
+# declared = stated by a third party (source given); notes = recorded in the lab notes at the time,
+# no raw log in this folder.
+episode: ep-001-moe-offload
+title: "One llama.cpp flag, and an 8 GB GPU runs a 35B model faster than reading speed"
+verdict: "True with asterisks"
+package_version: 1.0.0
+package_date: 2026-11-16
+articles:
+  part_a: "{PART_A_URL}"
+  part_b1: "{PART_B1_URL}"
+  part_b2: "{PART_B2_URL}"
+  part_b3: "{PART_B3_URL}"
+
+claim:
+  source: "Abhinav Raj, XDA Developers, 2026-10-22"
+  headline: "I changed one llama.cpp flag, and my 8GB laptop GPU now runs a 35B model faster than I can read"
+  url: "https://www.xda-developers.com/i-stopped-thinking-my-8gb-gpu-was-too-small-after-learning-to-offload-moe-llm-layers-to-ram/"
+  read_at_source: 2026-11-02
+  declared_hardware: "Lenovo Legion 5, RTX 3070 Mobile 8 GB, Windows 11; CPU, RAM and llama.cpp build not stated"
+  declared_command: "llama-bench -m Qwen3.6-27B-IQ4_XS.gguf -m Qwen3.6-35B-A3B-UD-IQ4_XS.gguf -ngl 99 -ncmoe 0,28 -p 512 -n 128 -r 3 -ctk q8_0 -ctv q8_0"
+  declared_results_t_per_s:   # declared by the article (table), not measured here
+    - {model: qwen3.6-27b-iq4_xs, ncmoe: null, pp512: 38.83, tg128: 0.75}
+    - {model: qwen3.6-35b-a3b-ud-iq4_xs, ncmoe: 0, pp512: 109.66, tg128: 4.02}
+    - {model: qwen3.6-35b-a3b-ud-iq4_xs, ncmoe: 28, pp512: 341.37, tg128: 32.82}
+
+protocol:
+  file: PROTOCOL.md
+  written: 2026-11-02
+  note: "Written before any measurement; amendments in its changelog."
+
+dates:
+  mac_session_1: {id: 2026-11-02, window: "2026-11-02 morning (CET)", conditions: "machine in daily use, Steam/Wine running"}
+  mac_session_2: {id: 2026-11-03-am, window: "2026-11-03 11:40-11:49 CET", conditions: "browser renderer ~1 core, screen sharing active"}
+  mac_session_3: {id: 2026-11-03-clean, window: "2026-11-03 19:50-20:42 CET", conditions: "user apps closed; reference session for the Mac"}
+  desktop_day: {id: 2026-11-02-day, window: "2026-11-02 ~10:54 CET", conditions: "CPU only, other services running"}
+  desktop_night: {id: 2026-11-02-night, window: "2026-11-02 22:15-22:48 CET", conditions: "resident inference server stopped; GPU held only the desktop (479 MiB)"}
+
+hardware:
+  macbook-pro-m4-max:
+    model_identifier: Mac16,6                       # verified: logs/mac/env-hardware.txt
+    chip: Apple M4 Max                              # verified: env-hardware.txt, llama-bench JSON cpu_info/gpu_info
+    cpu_cores: "16 (12 performance + 4 efficiency)" # verified: env-hardware.txt
+    gpu_cores: 40                                   # verified: env-hardware.txt
+    memory: "48 GB unified (51539607552 bytes)"     # verified: env-hardware.txt
+    metal_recommended_max_working_set_mb: 40200.90  # verified: any logs/mac/*/raw/*.stderr.txt
+    os: "macOS 27.0.1"                              # notes (not in a log here)
+    power: "AC power"                               # verified: *.env.txt
+  desktop-rtx3080:
+    cpu: "Intel Core i7-8700K, 6 cores / 12 threads" # verified: llama-bench JSON cpu_info
+    gpu: "NVIDIA GeForce RTX 3080 12 GB, 11887 MiB visible to CUDA" # verified: night raw/*.stderr.txt
+    gpu_driver: "610.57.04"                         # verified: logs/desktop/2026-11-02-night/env-nvidia.txt
+    cuda_umd_version: "13.3"                        # verified: env-nvidia.txt
+    memory: "62 GB DDR4, dual channel, speed not verified" # notes
+    platform: "Z370, PCIe Gen3 x16"                 # notes
+    os: "Linux 7.2.5 (Arch Linux based)"            # notes
+    container_limits: {cpus_day: 6, cpus_night: 10, threads: 6, network: none}  # verified: scripts/original/desktop-night.sh, day cmd.txt
+    vram_emulation_8gb:
+      method: "separate process allocates a fixed VRAM block and holds it for the whole 8 GB phase"
+      ballast_bytes: 3092840448                     # verified: logs/desktop/2026-11-02-night/night.log
+      free_vram_before_phase_mib: 8192              # verified: night.log
+      caveat: "reproduces memory capacity only, not the bandwidth/compute of an 8 GB laptop GPU"
+
+software:
+  llama_cpp:
+    release: b12034
+    commit: 1c5ed702c9e540ac14cc8c78100ea3984bc0e227  # short form 1c5ed702c verified in every llama-bench JSON
+    source: https://github.com/ggml-org/llama.cpp/releases/tag/b12034
+    builds:
+      macos:
+        file: llama-b12034-bin-macos-arm64.tar.gz
+        sha256: "ce1893ad…1d9b (abbreviated in the lab notes; checked against the GitHub release digest)"
+        backends: "MTL,BLAS"                        # verified: JSON backends
+      linux_cuda:
+        file: llama-b12034-bin-ubuntu-cuda-12.8-x64.tar.gz
+        sha256: aadc322fdf95b50e5c5442fee71b8f757ea31f88ef53cf3dddea877da59d2052
+      linux_cudart:
+        file: cudart-llama-b12034-bin-ubuntu-cuda-12.8-x64.tar.gz
+        sha256: 4cdd72a0052d6796e070c80c23537477ed5b2d1554273945df63533e4c004468
+      cpu_backend_selected: haswell                 # verified: desktop stderr (libggml-cpu-haswell.so)
+  container_runtime_image:
+    image: "ghcr.io/ggml-org/llama.cpp@sha256:3e7673cce183a55f97a1bc3c80817f3c61452483c13bc088a6766388af4775fe"
+    note: "used only as Ubuntu 24.04 userland; its own llama.cpp is not used (entrypoint overridden)"
+  vram_ballast_image:
+    image: "vllm/vllm-openai:v0.30.0"
+    note: "used only for torch.cuda allocation; any PyTorch CUDA image works"
+
+models:   # weights are NOT in this repository: name, source and hash only
+  - id: qwen3.6-35b-a3b-ud-iq4_xs
+    repo: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
+    revision: a483e9e6cbd595906af30beda3187c2663a1118c
+    file: Qwen3.6-35B-A3B-UD-IQ4_XS.gguf
+    bytes: 17730509792
+    sha256: 649d7508507b84638732c4f52c24c8b15843c6dca2f3ff793ae07c14a67ebbb3
+    quantisation: "IQ4_XS (unsloth dynamic, imatrix), llama-bench: 'qwen35moe 35B.A3B IQ4_XS - 4.25 bpw'"
+    params: 34660610688                             # verified: JSON model_n_params
+    architecture: {arch: qwen35moe, layers: 40, experts: 256, experts_used: 8}  # verified: model-metadata.txt
+    license: Apache-2.0
+  - id: qwen3.6-27b-iq4_xs
+    repo: https://huggingface.co/unsloth/Qwen3.6-27B-GGUF
+    revision: 82d411acf4a06cfb8d9b073a5211bf410bfc29bf
+    file: Qwen3.6-27B-IQ4_XS.gguf
+    bytes: 15440005344
+    sha256: 8a3365759dc1b33b52c4e7d91d5a67d5ee1418e8408aa54196f04a98da53e5dc
+    quantisation: IQ4_XS
+    architecture: {arch: qwen35, layers: 64}        # verified: model-metadata.txt
+    license: Apache-2.0
+  - id: qwen3.6-35b-a3b-q8_0
+    role: "higher-precision reference for the quality check (Mac, clean session)"
+    repo: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
+    revision: a483e9e6cbd595906af30beda3187c2663a1118c
+    file: Qwen3.6-35B-A3B-Q8_0.gguf
+    bytes: 36903140320
+    sha256: d1a395809f65a43a13ad119eb4e7acdef1ac6d68120f39902c8ab96e72794a59
+    quantisation: Q8_0
+    license: Apache-2.0
+
+texts:
+  perplexity_alice:
+    source: "Project Gutenberg #11, Alice's Adventures in Wonderland (public domain)"
+    url: https://www.gutenberg.org/cache/epub/11/pg11.txt
+    sha256_as_used: 01b38ea4c710a84bc18d0bd41271a5a1a92b94e97b2812f4dece97d4a694725e
+    note: "Gutenberg may update the file; the hash identifies the copy used on 2026-11-02"
+  kld_fresh_text:
+    sha256: 840d5db444337ce872a46dd56a86af3af990c17ef85ed6c9802e36bb36bd2a8e
+    bytes: 10241
+    published: false
+    note: "A text written on 2026-11-02 (test protocol + private lab notes), chosen so it cannot be in any training data. Not published because it contains private lab notes. To reproduce the KLD check, any text written after the model's release works; absolute KLD values will differ."
+  greedy_prompts:
+    - {file: prompts/greedy-1.txt, sha256: 1e0bfc1a619f172d3e2d0557f4f98b45fe7e79ae2fe770a00b9fc9db7e5d2b1f}
+    - {file: prompts/greedy-2.txt, sha256: 8d2cf0b816909522fd5e75d46eba716b4bdb6bef2c51e918c5b77df7abf4cabf}
+
+common_flags: "-p 512 -n 128 -ctk q8_0 -ctv q8_0 -fa on -o json"
+repetitions: {depth_0: 5, depth_16384: "3 (Mac clean session; see results.csv for the earlier sessions)", desktop_cpu_only_and_dense: 3}
+
+files:
+  results.csv: "one row per llama-bench repetition (tokens/s), plus one row per failed run"
+  results_summary.csv: "one row per run and test: mean and sd as reported by llama-bench, median, memory"
+  quality.csv: "perplexity, KL divergence, top-1 agreement, greedy-output prefixes"
+  claims-to-data.md: "every number in the articles, mapped to a row or a log line"
+  commands.sh: "the exact commands, in order"
+  charts/: "chart data and plotting script"
+  logs/: "raw llama-bench JSON, stderr, commands, environment snapshots, QC outputs"
+  scripts/: "build_csv.py (regenerates the CSVs), gguf_meta.py, original runners (sanitised)"
+
+redactions:
+  - "Absolute paths and user names replaced (~/moe-offload-lab, $LAB)."
+  - "Machine host name replaced by 'desktop'; internal container and service names replaced."
+  - "Process snapshots: commands reduced to their base name; some third-party utilities shown as [redacted]."
+  - "Not included: full process lists taken before closing apps on the Mac, internal notification script, KLD logit files (.bin), model weights, binaries."

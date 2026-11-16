@@ -1,0 +1,2 @@
+def merge_intervals(intervals):
+    """Merge overlapping intervals. Input: list of [start, end] pairs. Return the merged list sorted by start."""

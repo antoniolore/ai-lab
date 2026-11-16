@@ -1,0 +1,8 @@
+label,kind,tg128_tokens_per_s,note
+"XDA, without the flag (-ncmoe 0)",declared,4.02,"RTX 3070 Mobile 8 GB, Windows (article table)"
+"XDA, -ncmoe 28",declared,32.82,"RTX 3070 Mobile 8 GB, Windows (article table)"
+Without the flag (-ncmoe 0),measured,,did not load: out of memory
+"Classic offload, most layers that fit (-ngl 16)",measured,15.85,"RTX 3080, 8 GB emulated; sd 0.04"
+Article's setting (-ncmoe 28),measured,36.14,"RTX 3080, 8 GB emulated; sd 0.24"
+Auto-fit (-fitt 1024),measured,38.02,"RTX 3080, 8 GB emulated; sd 0.47"
+"CPU only, no GPU (i7-8700K)",measured,9.39,reference

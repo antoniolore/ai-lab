@@ -1,0 +1,2 @@
+load_backend: loaded RPC backend from /opt/llama/libggml-rpc.so
+load_backend: loaded CPU backend from /opt/llama/libggml-cpu-haswell.so

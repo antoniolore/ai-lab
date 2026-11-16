@@ -1,0 +1,11 @@
+0.00.883.643 I cmn          init: llama threadpool init, n_threads = 12
+0.00.922.430 I 
+0.00.923.289 I system_info: n_threads = 12 (n_threads_batch = 12) / 16 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | DOTPROD = 1 | LLAMAFILE = 1 | ACCELERATE = 1 | REPACK = 1 | 
+0.00.923.397 I perplexity: saving all logits to ~/moe-offload-lab/results-clean-2026-11-03/qc/kld-base-gpu.bin
+0.00.923.402 I perplexity: tokenizing the input ..
+0.00.926.722 I perplexity: tokenization took 3.319 ms
+0.00.926.727 I perplexity: calculating perplexity over 7 chunks, n_ctx=512, batch_size=2048, n_seq=4
+0.02.342.005 I perplexity: 1.40 seconds per pass - ETA 0.03 minutes
+[1]3.1837,[2]6.8992,[3]6.9610,[4]6.9872,[5]7.4061,[6]8.7396,[7]8.6666,
+0.03.585.682 I Final estimate: PPL = 8.6666 +/- 0.55889
+
