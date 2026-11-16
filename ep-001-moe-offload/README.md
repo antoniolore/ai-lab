@@ -11,10 +11,10 @@ the flag's gain is 2.28×, not the 8× implied by the article's table.
 
 | Part | Medium | Substack |
 |---|---|---|
-| Part A — the short version | published 2026-11-17: {EP01_A_MEDIUM_URL} | published 2026-11-17: {EP01_A_SUBSTACK_URL} |
-| Lab notes, part 1 — setup, Mac and CPU baselines | published 2026-11-18: {EP01_B1_MEDIUM_URL} | published 2026-11-18: {EP01_B1_SUBSTACK_URL} |
-| Lab notes, part 2 — RTX 3080, 12 GB and emulated 8 GB | published 2026-11-19: {EP01_B2_MEDIUM_URL} | published 2026-11-19: {EP01_B2_SUBSTACK_URL} |
-| Lab notes, part 3 — quality, `--fit` default, verdict | published 2026-11-20: {EP01_B3_MEDIUM_URL} | published 2026-11-20: {EP01_B3_SUBSTACK_URL} |
+| Part A — the short version | <!-- link:ep01-a-medium -->out 2026-11-17<!-- /link --> | <!-- link:ep01-a-substack -->out 2026-11-17<!-- /link --> |
+| Lab notes, part 1 — setup, Mac and CPU baselines | <!-- link:ep01-b1-medium -->out 2026-11-18<!-- /link --> | <!-- link:ep01-b1-substack -->out 2026-11-18<!-- /link --> |
+| Lab notes, part 2 — RTX 3080, 12 GB and emulated 8 GB | <!-- link:ep01-b2-medium -->out 2026-11-19<!-- /link --> | <!-- link:ep01-b2-substack -->out 2026-11-19<!-- /link --> |
+| Lab notes, part 3 — quality, `--fit` default, verdict | <!-- link:ep01-b3-medium -->out 2026-11-20<!-- /link --> | <!-- link:ep01-b3-substack -->out 2026-11-20<!-- /link --> |
 
 Links are filled in after each release. Error reports, with numbers: as a GitHub Issue in this repository (https://github.com/antoniolore/ai-lab/issues) or in the comments of the articles.
 

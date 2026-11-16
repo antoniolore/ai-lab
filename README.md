@@ -7,13 +7,13 @@ reproducible tests on stated hardware. Every published number links back to a ro
 
 | Episode | Topic | Medium | Substack | Data |
 |---|---|---|---|---|
-| ep00 | Glossary: what "7B", "4-bit" and "MoE" actually mean | [Medium](https://medium.com/@antonio.lore/what-7b-4-bit-and-moe-actually-mean-an-ai-glossary-for-checking-viral-claims-b642abf6d063) | — | none (no test) |
-| ep01 Part A | One llama.cpp flag (`--n-cpu-moe`), an 8 GB GPU and a 35B MoE model. Verdict: True with asterisks | published 2026-11-17: {EP01_A_MEDIUM_URL} | published 2026-11-17: {EP01_A_SUBSTACK_URL} | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
-| ep01 Lab notes 1 | Setup, Mac and CPU baselines | published 2026-11-18: {EP01_B1_MEDIUM_URL} | published 2026-11-18: {EP01_B1_SUBSTACK_URL} | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
-| ep01 Lab notes 2 | RTX 3080 at 12 GB and emulated 8 GB | published 2026-11-19: {EP01_B2_MEDIUM_URL} | published 2026-11-19: {EP01_B2_SUBSTACK_URL} | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
-| ep01 Lab notes 3 | Quality, `--fit` default, verdict | published 2026-11-20: {EP01_B3_MEDIUM_URL} | published 2026-11-20: {EP01_B3_SUBSTACK_URL} | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
+| ep00 | Glossary: what "7B", "4-bit" and "MoE" actually mean | <!-- link:ep00-medium -->[Medium](https://medium.com/@antonio.lore/what-7b-4-bit-and-moe-actually-mean-an-ai-glossary-for-checking-viral-claims-b642abf6d063)<!-- /link --> | <!-- link:ep00-substack -->—<!-- /link --> | none (no test) |
+| ep01 Part A | One llama.cpp flag (`--n-cpu-moe`), an 8 GB GPU and a 35B MoE model. Verdict: True with asterisks | <!-- link:ep01-a-medium -->out 2026-11-17<!-- /link --> | <!-- link:ep01-a-substack -->out 2026-11-17<!-- /link --> | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
+| ep01 Lab notes 1 | Setup, Mac and CPU baselines | <!-- link:ep01-b1-medium -->out 2026-11-18<!-- /link --> | <!-- link:ep01-b1-substack -->out 2026-11-18<!-- /link --> | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
+| ep01 Lab notes 2 | RTX 3080 at 12 GB and emulated 8 GB | <!-- link:ep01-b2-medium -->out 2026-11-19<!-- /link --> | <!-- link:ep01-b2-substack -->out 2026-11-19<!-- /link --> | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
+| ep01 Lab notes 3 | Quality, `--fit` default, verdict | <!-- link:ep01-b3-medium -->out 2026-11-20<!-- /link --> | <!-- link:ep01-b3-substack -->out 2026-11-20<!-- /link --> | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
 
-Links marked "published <date>" are filled in after each release. Every code or data folder in this repository has a README with
+Links marked "out <date>" are filled in automatically after each release. Every code or data folder in this repository has a README with
 the links to its articles.
 
 ## Layout of an episode folder

@@ -8,11 +8,23 @@ verdict: "True with asterisks"
 package_version: 1.0.0
 package_date: 2026-11-16
 articles:
-  # filled in after each release (see README.md)
-  part_a: {date: 2026-11-17, medium: "{EP01_A_MEDIUM_URL}", substack: "{EP01_A_SUBSTACK_URL}"}
-  part_b1: {date: 2026-11-18, medium: "{EP01_B1_MEDIUM_URL}", substack: "{EP01_B1_SUBSTACK_URL}"}
-  part_b2: {date: 2026-11-19, medium: "{EP01_B2_MEDIUM_URL}", substack: "{EP01_B2_SUBSTACK_URL}"}
-  part_b3: {date: 2026-11-20, medium: "{EP01_B3_MEDIUM_URL}", substack: "{EP01_B3_SUBSTACK_URL}"}
+  # filled in automatically after each release: the trailing link comments mark the values (see README.md)
+  part_a:
+    date: 2026-11-17
+    medium: null  # link:ep01-a-medium
+    substack: null  # link:ep01-a-substack
+  part_b1:
+    date: 2026-11-18
+    medium: null  # link:ep01-b1-medium
+    substack: null  # link:ep01-b1-substack
+  part_b2:
+    date: 2026-11-19
+    medium: null  # link:ep01-b2-medium
+    substack: null  # link:ep01-b2-substack
+  part_b3:
+    date: 2026-11-20
+    medium: null  # link:ep01-b3-medium
+    substack: null  # link:ep01-b3-substack
 repo: https://github.com/antoniolore/ai-lab
 
 claim:
