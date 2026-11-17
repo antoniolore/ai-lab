@@ -11,8 +11,8 @@ articles:
   # filled in automatically after each release: the trailing link comments mark the values (see README.md)
   part_a:
     date: 2026-11-17
-    medium: null  # link:ep01-a-medium
-    substack: null  # link:ep01-a-substack
+    medium: "https://medium.com/@antonio.lore/one-llama-cpp-flag-and-an-8-gb-gpu-runs-a-35b-model-faster-than-reading-speed-5d2a3a0ddabe"  # link:ep01-a-medium
+    substack: "https://antoniolore.substack.com/p/one-llamacpp-flag-and-an-8-gb-gpu"  # link:ep01-a-substack
   part_b1:
     date: 2026-11-18
     medium: null  # link:ep01-b1-medium
