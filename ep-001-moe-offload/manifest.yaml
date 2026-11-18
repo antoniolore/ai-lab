@@ -15,8 +15,8 @@ articles:
     substack: "https://antoniolore.substack.com/p/one-llamacpp-flag-and-an-8-gb-gpu"  # link:ep01-a-substack
   part_b1:
     date: 2026-11-18
-    medium: null  # link:ep01-b1-medium
-    substack: null  # link:ep01-b1-substack
+    medium: "https://medium.com/@antonio.lore/lab-notes-part-1-rerunning-the-n-cpu-moe-claim-setup-mac-and-cpu-baselines-a82291e02935"  # link:ep01-b1-medium
+    substack: "https://antoniolore.substack.com/p/lab-notes-part-1-rerunning-the-n"  # link:ep01-b1-substack
   part_b2:
     date: 2026-11-19
     medium: null  # link:ep01-b2-medium
