@@ -1,0 +1,5 @@
+2026-11-18 13:49:43 === bench session load=14.36 8.84 7.35 swap=489.88M pressure=1 therm=2
+2026-11-18 13:50:43 START bn-i2s-v0 t=12 i=5 load=7.64 7.92 7.10 swap=489.88M pressure=1 therm=2
+2026-11-18 13:50:56 END   bn-i2s-v0 t=12 i=5 rc=0 load=9.15 8.23 7.23 swap=489.88M pressure=1 therm=2
+2026-11-18 13:51:46 START bn-i2s-v0 t=12 i=4 load=7.16 7.91 7.17 swap=489.88M pressure=1 therm=2
+2026-11-18 13:51:58 END   bn-i2s-v0 t=12 i=4 rc=0 load=8.61 8.19 7.28 swap=489.88M pressure=1 therm=2

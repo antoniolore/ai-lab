@@ -1,0 +1,5 @@
+--- a/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c
++++ b/3rdparty/llama.cpp/ggml/src/ggml-cpu/ggml-cpu.c
+@@ -1495 +1495 @@
+-        const size_t src1_col_stride = src1_cont || src1->type != vec_dot_type ? i2s_row_size : nb11;
++        const size_t src1_col_stride = ggml_is_contiguous(src1) || src1->type != vec_dot_type ? i2s_row_size : nb11;

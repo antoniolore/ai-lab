@@ -1,0 +1,19 @@
+== pre-clean 2026-11-19 14:05:45
+hw.model: Mac16,6
+machdep.cpu.brand_string: Apple M4 Max
+hw.memsize: 51539607552
+hw.perflevel0.physicalcpu: 12
+hw.perflevel1.physicalcpu: 4
+ProductName:		macOS
+ProductVersion:		27.0.1
+BuildVersion:		26A434
+14:05  up 16 days, 19:48, 3 users, load averages: 2.81 2.37 2.29
+vm.swapusage: total = 5120.00M  used = 4117.56M  free = 1002.44M  (encrypted)
+kern.memorystatus_vm_pressure_level: 1
+Note: No thermal warning level has been recorded
+Note: No performance warning level has been recorded
+Note: No CPU power status has been recorded
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=26476643)	100%; charged; 0:00 remaining present: true
+/dev/disk3s5   926Gi   849Gi    47Gi    95%    2.5M  498M    0%   /System/Volumes/Data
+[redacted: 42 lines of process and application lists]

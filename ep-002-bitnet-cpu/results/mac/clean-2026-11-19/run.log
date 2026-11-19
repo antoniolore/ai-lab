@@ -1,0 +1,168 @@
+2026-11-19 14:11:17 === bench session load=1.77 2.82 2.66 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:12:02 START bn-i2s-v0 t=12 i=1 load=1.51 2.59 2.58 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:12:14 END   bn-i2s-v0 t=12 i=1 rc=0 load=4.12 3.12 2.77 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:13:00 START bn-i2s-v0 t=12 i=2 load=2.76 2.90 2.70 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:13:12 END   bn-i2s-v0 t=12 i=2 rc=0 load=4.26 3.21 2.82 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:13:57 START bn-i2s-v0 t=12 i=3 load=2.84 2.98 2.75 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:14:09 END   bn-i2s-v0 t=12 i=3 rc=0 load=5.28 3.52 2.95 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:15:04 START ll-f16 t=12 i=1 load=3.30 3.26 2.88 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:15:25 END   ll-f16 t=12 i=1 rc=0 load=5.27 3.69 3.04 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:16:31 START ll-f16 t=12 i=2 load=3.31 3.40 2.98 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:16:50 END   ll-f16 t=12 i=2 rc=0 load=5.81 3.96 3.19 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:17:45 START ll-f16 t=12 i=3 load=3.46 3.62 3.11 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:18:05 END   ll-f16 t=12 i=3 rc=0 load=6.35 4.28 3.36 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:19:10 START ll-tq2 t=12 i=1 load=3.49 3.85 3.27 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:19:22 END   ll-tq2 t=12 i=1 rc=0 load=4.73 4.11 3.36 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:20:07 START ll-tq2 t=12 i=2 load=3.10 3.75 3.27 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:20:19 END   ll-tq2 t=12 i=2 rc=0 load=5.08 4.15 3.42 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:21:04 START ll-tq2 t=12 i=3 load=2.99 3.73 3.29 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:21:15 END   ll-tq2 t=12 i=3 rc=0 load=5.56 4.26 3.49 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:22:00 START ll-tq2-embf16 t=12 i=1 load=3.48 3.89 3.40 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:22:13 END   ll-tq2-embf16 t=12 i=1 rc=0 load=4.50 4.09 3.47 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:22:58 START ll-tq2-embf16 t=12 i=2 load=2.98 3.75 3.38 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:23:10 END   ll-tq2-embf16 t=12 i=2 rc=0 load=4.59 4.06 3.49 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:23:55 START ll-tq2-embf16 t=12 i=3 load=3.19 3.79 3.42 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:24:07 END   ll-tq2-embf16 t=12 i=3 rc=0 load=3.80 3.90 3.47 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:24:52 START ll-tq1 t=12 i=1 load=2.53 3.55 3.36 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:25:05 END   ll-tq1 t=12 i=1 rc=0 load=4.90 4.02 3.53 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:25:50 START ll-tq1 t=12 i=2 load=3.18 3.69 3.43 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:26:02 END   ll-tq1 t=12 i=2 rc=0 load=4.25 3.89 3.50 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:26:57 START ll-tq1 t=12 i=3 load=3.07 3.64 3.44 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:27:09 END   ll-tq1 t=12 i=3 rc=0 load=4.02 3.82 3.50 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:27:54 START ll-q40 t=12 i=1 load=3.08 3.58 3.43 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:28:04 END   ll-q40 t=12 i=1 rc=0 load=3.87 3.73 3.48 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:28:49 START ll-q40 t=12 i=2 load=3.04 3.52 3.41 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:28:58 END   ll-q40 t=12 i=2 rc=0 load=4.65 3.85 3.53 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:29:43 START ll-q40 t=12 i=3 load=3.35 3.62 3.46 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:29:52 END   ll-q40 t=12 i=3 rc=0 load=4.99 3.96 3.58 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:30:37 START ll-qwen-q4km t=12 i=1 load=3.13 3.61 3.47 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:30:44 END   ll-qwen-q4km t=12 i=1 rc=0 load=3.84 3.75 3.52 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:31:29 START ll-qwen-q4km t=12 i=2 load=2.81 3.47 3.43 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:31:37 END   ll-qwen-q4km t=12 i=2 rc=0 load=3.65 3.62 3.48 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:32:22 START ll-qwen-q4km t=12 i=3 load=2.34 3.29 3.37 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:32:29 END   ll-qwen-q4km t=12 i=3 rc=0 load=3.36 3.49 3.44 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:33:14 START bn-large-i2s-v0 t=12 i=1 load=2.26 3.17 3.32 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:33:18 END   bn-large-i2s-v0 t=12 i=1 rc=0 load=3.12 3.33 3.38 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:34:03 START bn-large-i2s-v0 t=12 i=2 load=2.27 3.07 3.28 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:34:08 END   bn-large-i2s-v0 t=12 i=2 rc=0 load=3.13 3.23 3.33 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:34:53 START bn-large-i2s-v0 t=12 i=3 load=1.75 2.84 3.18 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:34:57 END   bn-large-i2s-v0 t=12 i=3 rc=0 load=2.73 3.03 3.25 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:35:42 START ll-large-f16 t=12 i=1 load=2.29 2.88 3.18 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:35:50 END   ll-large-f16 t=12 i=1 rc=0 load=3.31 3.08 3.25 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:36:35 START ll-large-f16 t=12 i=2 load=2.37 2.85 3.15 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:36:42 END   ll-large-f16 t=12 i=2 rc=0 load=3.34 3.04 3.22 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:37:27 START ll-large-f16 t=12 i=3 load=2.95 2.97 3.18 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:37:34 END   ll-large-f16 t=12 i=3 rc=0 load=3.76 3.14 3.24 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:38:19 START ll-large-tq2 t=12 i=1 load=2.97 3.03 3.19 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:38:24 END   ll-large-tq2 t=12 i=1 rc=0 load=3.13 3.07 3.20 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:39:09 START ll-large-tq2 t=12 i=2 load=2.47 2.90 3.13 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:39:14 END   ll-large-tq2 t=12 i=2 rc=0 load=3.39 3.08 3.20 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:39:59 START ll-large-tq2 t=12 i=3 load=2.20 2.82 3.09 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:40:03 END   ll-large-tq2 t=12 i=3 rc=0 load=2.34 2.84 3.10 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:40:48 START ll-large-tq1 t=12 i=1 load=2.06 2.69 3.03 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:40:53 END   ll-large-tq1 t=12 i=1 rc=0 load=2.53 2.78 3.06 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:41:38 START ll-large-tq1 t=12 i=2 load=2.37 2.70 3.01 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:41:43 END   ll-large-tq1 t=12 i=2 rc=0 load=3.46 2.92 3.09 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:42:28 START ll-large-tq1 t=12 i=3 load=2.23 2.66 2.98 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:42:33 END   ll-large-tq1 t=12 i=3 rc=0 load=3.33 2.88 3.06 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:43:18 START ll-large-q40 t=12 i=1 load=2.25 2.66 2.97 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:43:21 END   ll-large-q40 t=12 i=1 rc=0 load=3.03 2.82 3.02 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:44:06 START ll-large-q40 t=12 i=2 load=1.95 2.56 2.91 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:44:10 END   ll-large-q40 t=12 i=2 rc=0 load=1.95 2.56 2.91 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:44:55 START ll-large-q40 t=12 i=3 load=2.26 2.55 2.89 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:44:58 END   ll-large-q40 t=12 i=3 rc=0 load=3.04 2.70 2.94 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:45:43 START bn-i2s-v0 t=2 i=1 load=2.53 2.63 2.90 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:46:38 END   bn-i2s-v0 t=2 i=1 rc=0 load=3.15 2.78 2.94 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:47:23 START bn-i2s-v0 t=2 i=2 load=2.43 2.64 2.88 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:48:17 END   bn-i2s-v0 t=2 i=2 rc=0 load=2.90 2.74 2.90 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:49:02 START bn-i2s-v0 t=2 i=3 load=2.14 2.57 2.83 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:49:57 END   bn-i2s-v0 t=2 i=3 rc=0 load=2.73 2.67 2.85 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:50:42 START ll-f16 t=2 i=1 load=2.59 2.65 2.83 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:51:26 END   ll-f16 t=2 i=1 rc=0 load=2.86 2.72 2.84 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:52:11 START ll-f16 t=2 i=2 load=2.38 2.63 2.80 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:52:56 END   ll-f16 t=2 i=2 rc=0 load=2.96 2.74 2.84 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:53:41 START ll-f16 t=2 i=3 load=2.28 2.58 2.77 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:54:26 END   ll-f16 t=2 i=3 rc=0 load=3.12 2.77 2.83 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:55:11 START ll-tq2 t=2 i=1 load=2.32 2.64 2.78 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:55:32 END   ll-tq2 t=2 i=1 rc=0 load=2.95 2.76 2.82 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:56:17 START ll-tq2 t=2 i=2 load=2.36 2.63 2.77 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:56:39 END   ll-tq2 t=2 i=2 rc=0 load=2.78 2.71 2.79 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:57:24 START ll-tq2 t=2 i=3 load=2.17 2.56 2.73 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:57:46 END   ll-tq2 t=2 i=3 rc=0 load=2.91 2.70 2.78 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:58:31 START ll-tq2-embf16 t=2 i=1 load=2.28 2.54 2.71 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:58:54 END   ll-tq2-embf16 t=2 i=1 rc=0 load=2.92 2.67 2.75 swap=2583.25M pressure=1 therm=2
+2026-11-19 14:59:39 START ll-tq2-embf16 t=2 i=2 load=2.41 2.58 2.71 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:00:02 END   ll-tq2-embf16 t=2 i=2 rc=0 load=3.26 2.76 2.78 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:00:47 START ll-tq2-embf16 t=2 i=3 load=2.14 2.54 2.69 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:01:10 END   ll-tq2-embf16 t=2 i=3 rc=0 load=2.92 2.69 2.74 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:01:55 START ll-tq1 t=2 i=1 load=2.22 2.55 2.69 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:02:22 END   ll-tq1 t=2 i=1 rc=0 load=2.48 2.58 2.69 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:03:07 START ll-tq1 t=2 i=2 load=2.02 2.45 2.64 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:03:34 END   ll-tq1 t=2 i=2 rc=0 load=2.68 2.56 2.67 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:04:19 START ll-tq1 t=2 i=3 load=2.12 2.44 2.62 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:04:46 END   ll-tq1 t=2 i=3 rc=0 load=2.77 2.56 2.66 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:05:32 START ll-q40 t=2 i=1 load=2.15 2.42 2.60 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:06:05 END   ll-q40 t=2 i=1 rc=0 load=2.64 2.50 2.62 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:06:50 START ll-q40 t=2 i=2 load=1.57 2.24 2.52 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:07:23 END   ll-q40 t=2 i=2 rc=0 load=2.38 2.37 2.55 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:08:09 START ll-q40 t=2 i=3 load=2.28 2.33 2.53 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:08:42 END   ll-q40 t=2 i=3 rc=0 load=2.94 2.48 2.57 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:09:27 START ll-qwen-q4km t=2 i=1 load=2.62 2.47 2.56 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:09:54 END   ll-qwen-q4km t=2 i=1 rc=0 load=3.12 2.60 2.60 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:10:39 START ll-qwen-q4km t=2 i=2 load=2.56 2.50 2.57 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:11:07 END   ll-qwen-q4km t=2 i=2 rc=0 load=2.69 2.54 2.58 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:11:52 START ll-qwen-q4km t=2 i=3 load=2.19 2.42 2.53 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:12:19 END   ll-qwen-q4km t=2 i=3 rc=0 load=2.64 2.50 2.56 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:13:04 START bn-large-i2s-v0 t=2 i=1 load=1.98 2.34 2.49 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:13:22 END   bn-large-i2s-v0 t=2 i=1 rc=0 load=2.34 2.40 2.51 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:14:07 START bn-large-i2s-v0 t=2 i=2 load=2.15 2.36 2.49 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:14:25 END   bn-large-i2s-v0 t=2 i=2 rc=0 load=2.17 2.35 2.48 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:15:10 START bn-large-i2s-v0 t=2 i=3 load=1.77 2.22 2.43 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:15:28 END   bn-large-i2s-v0 t=2 i=3 rc=0 load=2.02 2.26 2.43 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:16:13 START ll-large-f16 t=2 i=1 load=2.11 2.22 2.41 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:16:28 END   ll-large-f16 t=2 i=1 rc=0 load=2.45 2.29 2.43 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:17:13 START ll-large-f16 t=2 i=2 load=1.98 2.19 2.38 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:17:27 END   ll-large-f16 t=2 i=2 rc=0 load=2.29 2.24 2.40 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:18:13 START ll-large-f16 t=2 i=3 load=2.22 2.22 2.38 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:18:27 END   ll-large-f16 t=2 i=3 rc=0 load=2.75 2.34 2.42 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:19:12 START ll-large-tq2 t=2 i=1 load=2.49 2.31 2.41 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:19:19 END   ll-large-tq2 t=2 i=1 rc=0 load=2.45 2.31 2.41 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:20:05 START ll-large-tq2 t=2 i=2 load=1.99 2.20 2.36 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:20:12 END   ll-large-tq2 t=2 i=2 rc=0 load=2.14 2.23 2.37 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:20:57 START ll-large-tq2 t=2 i=3 load=2.20 2.24 2.36 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:21:04 END   ll-large-tq2 t=2 i=3 rc=0 load=2.58 2.32 2.39 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:21:49 START ll-large-tq1 t=2 i=1 load=2.16 2.24 2.36 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:21:58 END   ll-large-tq1 t=2 i=1 rc=0 load=2.43 2.30 2.37 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:22:43 START ll-large-tq1 t=2 i=2 load=2.35 2.30 2.37 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:22:52 END   ll-large-tq1 t=2 i=2 rc=0 load=2.67 2.37 2.39 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:23:37 START ll-large-tq1 t=2 i=3 load=2.07 2.24 2.34 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:23:46 END   ll-large-tq1 t=2 i=3 rc=0 load=2.21 2.26 2.35 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:24:31 START ll-large-q40 t=2 i=1 load=1.53 2.08 2.28 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:24:42 END   ll-large-q40 t=2 i=1 rc=0 load=1.76 2.11 2.29 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:25:27 START ll-large-q40 t=2 i=2 load=1.72 2.06 2.26 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:25:38 END   ll-large-q40 t=2 i=2 rc=0 load=2.07 2.12 2.28 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:26:23 START ll-large-q40 t=2 i=3 load=1.73 2.03 2.23 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:26:34 END   ll-large-q40 t=2 i=3 rc=0 load=2.08 2.09 2.25 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:27:19 START bn-i2s-head-INVALID t=12 i=1 load=1.94 2.05 2.23 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:30:15 END   bn-i2s-head-INVALID t=12 i=1 rc=0 load=13.29 7.26 4.37 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:30:15 === bench done load=13.29 7.26 4.37 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:30:15 100B tq2_0 generating (free 56 GB)
+wrote $LAB/models/dummy/100B-tq2_0.gguf: 26.32 GB tensor data, 100.22 B params (layout 100B)
+2026-11-19 15:31:15 100B tq2_0 generated, free now 31 GB
+2026-11-19 15:32:30 START dummy100b-tq2_0 t=12 i=1 load=3.45 5.46 4.06 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:33:26 END   dummy100b-tq2_0 t=12 i=1 rc=0 load=8.25 6.43 4.52 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:34:42 START dummy100b-tq2_0 t=12 i=2 load=3.21 5.28 4.24 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:35:39 END   dummy100b-tq2_0 t=12 i=2 rc=0 load=7.14 5.96 4.56 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:36:44 START dummy100b-tq2_0 t=12 i=3 load=3.42 5.10 4.33 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:37:41 END   dummy100b-tq2_0 t=12 i=3 rc=0 load=6.90 5.71 4.61 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:37:42 100B tq2_0 file deleted, free now 56 GB
+2026-11-19 15:37:42 100B i2_s generating (free 56 GB)
+wrote $LAB/models/dummy/100B-i2_s.gguf: 25.53 GB tensor data, 100.22 B params (layout 100B)
+2026-11-19 15:38:39 100B i2_s generated, free now 32 GB
+2026-11-19 15:39:24 START dummy100b-i2_s t=12 i=1 load=2.84 4.65 4.31 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:40:08 END   dummy100b-i2_s t=12 i=1 rc=0 load=8.65 5.94 4.80 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:41:53 START dummy100b-i2_s t=12 i=2 load=3.21 4.81 4.49 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:42:36 END   dummy100b-i2_s t=12 i=2 rc=0 load=8.32 5.93 4.92 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:44:01 START dummy100b-i2_s t=12 i=3 load=3.21 4.90 4.62 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:44:45 END   dummy100b-i2_s t=12 i=3 rc=0 load=8.67 6.07 5.06 swap=2583.25M pressure=1 therm=2
+2026-11-19 15:44:45 100B i2_s file deleted, free now 56 GB

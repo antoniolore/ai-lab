@@ -1,0 +1,285 @@
+2026-11-18T14:49:49+0100 preflight night=2026-11-18 dry=1
+2026-11-18T14:49:49+0100 sha256 check of models ...
+2026-11-18T14:52:06+0100 MemAvailable=37GiB (the local inference server still up)
+2026-11-18T14:52:06+0100 sudo -n ok (RAPL energy enabled)
+2026-11-18T14:52:06+0100 dry-run ok
+2026-11-18T22:01:00+0100 preflight night=2026-11-18 dry=0
+2026-11-18T22:01:00+0100 MemAvailable=36GiB (the local inference server still up)
+2026-11-18T22:01:00+0100 sudo -n ok (RAPL energy enabled)
+2026-11-18T22:01:00+0100 stopping the local inference server
+ Container inference-server Stopping 
+ Container inference-server Stopped 
+2026-11-18T22:01:26+0100 MemAvailable after stop: 37 GiB
+2026-11-18T22:01:56+0100 START bn-i2s-head-t6-i1 load=0.40 0.32 0.28 memavail=37G timeout=1200s memcap=34G
+2026-11-18T22:02:48+0100 END   bn-i2s-head-t6-i1 load=4.03 1.34 0.64 memavail=37G
+2026-11-18T22:03:28+0100 START bn-i2s-01eb415-t6-i1 load=2.31 1.23 0.63 memavail=37G timeout=1200s memcap=34G
+2026-11-18T22:04:13+0100 END   bn-i2s-01eb415-t6-i1 load=4.34 1.93 0.90 memavail=37G
+2026-11-18T22:04:53+0100 START bn-i2s-v0-t6-i1 load=2.29 1.70 0.86 memavail=37G timeout=1200s memcap=34G
+2026-11-18T22:05:42+0100 END   bn-i2s-v0-t6-i1 load=4.70 2.45 1.16 memavail=38G
+2026-11-18T22:06:22+0100 START ll-f16-t6-i1 load=2.41 2.14 1.11 memavail=37G timeout=1800s memcap=34G
+2026-11-18T22:09:10+0100 END   ll-f16-t6-i1 load=6.31 3.96 1.98 memavail=38G
+2026-11-18T22:10:10+0100 START ll-tq2-t6-i1 load=2.39 3.25 1.85 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:10:51+0100 END   ll-tq2-t6-i1 load=4.19 3.62 2.04 memavail=38G
+2026-11-18T22:11:31+0100 START ll-tq2-embf16-t6-i1 load=2.21 3.18 1.95 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:12:20+0100 END   ll-tq2-embf16-t6-i1 load=4.35 3.59 2.16 memavail=38G
+2026-11-18T22:13:00+0100 START ll-tq1-t6-i1 load=2.30 3.15 2.07 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:14:00+0100 END   ll-tq1-t6-i1 load=4.71 3.67 2.32 memavail=38G
+2026-11-18T22:14:50+0100 START ll-q40-t6-i1 load=2.25 3.16 2.21 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:15:54+0100 END   ll-q40-t6-i1 load=5.13 3.79 2.49 memavail=38G
+2026-11-18T22:16:44+0100 START ll-qwen-q4km-t6-i1 load=2.30 3.22 2.37 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:17:22+0100 END   ll-qwen-q4km-t6-i1 load=4.10 3.57 2.52 memavail=38G
+2026-11-18T22:18:02+0100 START bn-large-i2s-head-t6-i1 load=2.28 3.17 2.43 memavail=38G timeout=900s memcap=35G
+2026-11-18T22:18:17+0100 END   bn-large-i2s-head-t6-i1 load=3.18 3.32 2.49 memavail=38G
+2026-11-18T22:18:47+0100 START ll-large-f16-t6-i1 load=1.98 3.02 2.42 memavail=38G timeout=900s memcap=35G
+2026-11-18T22:19:34+0100 END   ll-large-f16-t6-i1 load=4.21 3.47 2.60 memavail=38G
+2026-11-18T22:20:14+0100 START ll-large-tq2-t6-i1 load=2.42 3.10 2.51 memavail=38G timeout=900s memcap=35G
+2026-11-18T22:20:29+0100 END   ll-large-tq2-t6-i1 load=3.22 3.24 2.56 memavail=38G
+2026-11-18T22:20:59+0100 START ll-large-tq1-t6-i1 load=1.95 2.93 2.48 memavail=38G timeout=900s memcap=35G
+2026-11-18T22:21:21+0100 END   ll-large-tq1-t6-i1 load=3.31 3.18 2.57 memavail=38G
+2026-11-18T22:21:51+0100 START ll-large-q40-t6-i1 load=2.06 2.89 2.50 memavail=38G timeout=900s memcap=35G
+2026-11-18T22:22:12+0100 END   ll-large-q40-t6-i1 load=3.12 3.06 2.56 memavail=38G
+2026-11-18T22:22:42+0100 START bn-i2s-head-t6-i2 load=1.94 2.78 2.49 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:23:26+0100 END   bn-i2s-head-t6-i2 load=4.52 3.34 2.69 memavail=38G
+2026-11-18T22:24:16+0100 START bn-i2s-01eb415-t6-i2 load=2.12 2.87 2.56 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:25:01+0100 END   bn-i2s-01eb415-t6-i2 load=4.23 3.33 2.73 memavail=38G
+2026-11-18T22:25:41+0100 START bn-i2s-v0-t6-i2 load=2.22 2.92 2.62 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:26:30+0100 END   bn-i2s-v0-t6-i2 load=4.43 3.39 2.79 memavail=38G
+2026-11-18T22:27:20+0100 START ll-f16-t6-i2 load=2.18 2.94 2.67 memavail=38G timeout=1800s memcap=35G
+2026-11-18T22:30:01+0100 END   ll-f16-t6-i2 load=5.85 4.39 3.28 memavail=38G
+2026-11-18T22:31:01+0100 START ll-tq2-t6-i2 load=2.21 3.61 3.08 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:31:42+0100 END   ll-tq2-t6-i2 load=4.22 3.96 3.22 memavail=38G
+2026-11-18T22:32:22+0100 START ll-tq2-embf16-t6-i2 load=2.32 3.50 3.10 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:33:09+0100 END   ll-tq2-embf16-t6-i2 load=4.48 3.92 3.26 memavail=38G
+2026-11-18T22:33:49+0100 START ll-tq1-t6-i2 load=2.44 3.47 3.13 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:34:48+0100 END   ll-tq1-t6-i2 load=4.89 3.98 3.33 memavail=38G
+2026-11-18T22:35:38+0100 START ll-q40-t6-i2 load=2.12 3.36 3.16 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:36:40+0100 END   ll-q40-t6-i2 load=4.83 3.92 3.36 memavail=38G
+2026-11-18T22:37:30+0100 START ll-qwen-q4km-t6-i2 load=2.36 3.39 3.21 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:38:08+0100 END   ll-qwen-q4km-t6-i2 load=4.05 3.68 3.31 memavail=38G
+2026-11-18T22:38:48+0100 START bn-large-i2s-head-t6-i2 load=2.19 3.25 3.18 memavail=38G timeout=900s memcap=35G
+2026-11-18T22:39:02+0100 END   bn-large-i2s-head-t6-i2 load=3.10 3.40 3.23 memavail=38G
+2026-11-18T22:39:32+0100 START ll-large-f16-t6-i2 load=2.30 3.18 3.17 memavail=38G timeout=900s memcap=35G
+2026-11-18T22:40:16+0100 END   ll-large-f16-t6-i2 load=4.05 3.54 3.29 memavail=38G
+2026-11-18T22:40:46+0100 START ll-large-tq2-t6-i2 load=2.45 3.20 3.18 memavail=38G timeout=900s memcap=35G
+2026-11-18T22:41:02+0100 END   ll-large-tq2-t6-i2 load=3.24 3.34 3.23 memavail=38G
+2026-11-18T22:41:32+0100 START ll-large-tq1-t6-i2 load=2.04 3.04 3.13 memavail=38G timeout=900s memcap=35G
+2026-11-18T22:41:53+0100 END   ll-large-tq1-t6-i2 load=3.23 3.24 3.20 memavail=38G
+2026-11-18T22:42:23+0100 START ll-large-q40-t6-i2 load=2.04 2.95 3.10 memavail=38G timeout=900s memcap=35G
+2026-11-18T22:42:43+0100 END   ll-large-q40-t6-i2 load=3.46 3.21 3.18 memavail=38G
+2026-11-18T22:43:13+0100 START bn-i2s-head-t6-i3 load=2.09 2.90 3.08 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:43:58+0100 END   bn-i2s-head-t6-i3 load=4.36 3.40 3.24 memavail=38G
+2026-11-18T22:44:38+0100 START bn-i2s-01eb415-t6-i3 load=2.23 2.97 3.10 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:45:22+0100 END   bn-i2s-01eb415-t6-i3 load=4.35 3.43 3.25 memavail=38G
+2026-11-18T22:46:02+0100 START bn-i2s-v0-t6-i3 load=2.34 3.03 3.13 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:46:51+0100 END   bn-i2s-v0-t6-i3 load=4.40 3.49 3.28 memavail=38G
+2026-11-18T22:47:31+0100 START ll-f16-t6-i3 load=2.36 3.08 3.15 memavail=38G timeout=1800s memcap=35G
+2026-11-18T22:50:12+0100 END   ll-f16-t6-i3 load=6.19 4.49 3.68 memavail=38G
+2026-11-18T22:51:12+0100 START ll-tq2-t6-i3 load=2.36 3.70 3.46 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:51:53+0100 END   ll-tq2-t6-i3 load=4.66 4.14 3.62 memavail=38G
+2026-11-18T22:52:33+0100 START ll-tq2-embf16-t6-i3 load=2.39 3.62 3.46 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:53:20+0100 END   ll-tq2-embf16-t6-i3 load=4.34 3.97 3.59 memavail=38G
+2026-11-18T22:54:10+0100 START ll-tq1-t6-i3 load=2.21 3.45 3.43 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:55:09+0100 END   ll-tq1-t6-i3 load=4.95 4.01 3.63 memavail=38G
+2026-11-18T22:55:59+0100 START ll-q40-t6-i3 load=2.19 3.40 3.44 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:57:01+0100 END   ll-q40-t6-i3 load=4.86 3.95 3.63 memavail=38G
+2026-11-18T22:57:51+0100 START ll-qwen-q4km-t6-i3 load=2.43 3.45 3.47 memavail=38G timeout=1200s memcap=35G
+2026-11-18T22:58:29+0100 END   ll-qwen-q4km-t6-i3 load=4.06 3.72 3.57 memavail=38G
+2026-11-18T22:59:09+0100 START bn-large-i2s-head-t6-i3 load=2.26 3.30 3.43 memavail=38G timeout=900s memcap=35G
+2026-11-18T22:59:23+0100 END   bn-large-i2s-head-t6-i3 load=3.17 3.45 3.48 memavail=38G
+2026-11-18T22:59:53+0100 START ll-large-f16-t6-i3 load=2.11 3.17 3.38 memavail=38G timeout=900s memcap=35G
+2026-11-18T23:00:37+0100 END   ll-large-f16-t6-i3 load=4.64 3.69 3.55 memavail=38G
+2026-11-18T23:01:47+0100 START ll-large-tq2-t6-i3 load=2.20 3.17 3.38 memavail=38G timeout=900s memcap=35G
+2026-11-18T23:02:03+0100 END   ll-large-tq2-t6-i3 load=3.04 3.31 3.42 memavail=38G
+2026-11-18T23:02:33+0100 START ll-large-tq1-t6-i3 load=1.84 2.99 3.31 memavail=38G timeout=900s memcap=35G
+2026-11-18T23:02:54+0100 END   ll-large-tq1-t6-i3 load=3.10 3.20 3.37 memavail=38G
+2026-11-18T23:03:24+0100 START ll-large-q40-t6-i3 load=2.06 2.94 3.28 memavail=38G timeout=900s memcap=35G
+2026-11-18T23:03:44+0100 END   ll-large-q40-t6-i3 load=3.34 3.17 3.35 memavail=38G
+2026-11-18T23:04:14+0100 START dummy100b-ll-tq2-t6 load=2.09 2.88 3.25 memavail=38G timeout=2400s memcap=35G
+2026-11-18T23:07:43+0100 END   dummy100b-ll-tq2-t6 load=6.43 4.49 3.79 memavail=40G
+2026-11-18T23:08:53+0100 START dummy100b-bn-i2s-head-t6 load=2.45 3.68 3.56 memavail=40G timeout=2400s memcap=37G
+2026-11-18T23:12:15+0100 END   dummy100b-bn-i2s-head-t6 load=6.35 4.81 4.01 memavail=40G
+2026-11-18T23:13:15+0100 START dummy100b-ll-tq2-t12 load=2.46 3.97 3.77 memavail=40G timeout=2400s memcap=37G
+2026-11-18T23:16:39+0100 END   dummy100b-ll-tq2-t12 load=12.00 7.60 5.19 memavail=40G
+2026-11-18T23:18:29+0100 START dummy100b-bn-i2s-head-t12 load=2.27 5.38 4.65 memavail=40G timeout=2400s memcap=37G
+2026-11-18T23:21:57+0100 END   dummy100b-bn-i2s-head-t12 load=11.16 7.95 5.76 memavail=41G
+2026-11-18T23:23:37+0100 START bn-i2s-head-t12-i1 load=2.42 5.80 5.21 memavail=41G timeout=1200s memcap=38G
+2026-11-18T23:24:30+0100 END   bn-i2s-head-t12-i1 load=8.02 6.80 5.59 memavail=41G
+2026-11-18T23:25:50+0100 START bn-i2s-01eb415-t12-i1 load=2.29 5.26 5.14 memavail=40G timeout=1200s memcap=37G
+2026-11-18T23:26:42+0100 END   bn-i2s-01eb415-t12-i1 load=8.10 6.39 5.53 memavail=40G
+2026-11-18T23:28:12+0100 START bn-i2s-v0-t12-i1 load=2.20 4.87 5.07 memavail=40G timeout=1200s memcap=37G
+2026-11-18T23:29:05+0100 END   bn-i2s-v0-t12-i1 load=8.70 6.19 5.51 memavail=40G
+2026-11-18T23:30:35+0100 START ll-f16-t12-i1 load=2.12 4.67 5.03 memavail=40G timeout=1800s memcap=37G
+2026-11-18T23:33:38+0100 END   ll-f16-t12-i1 load=12.20 8.15 6.31 memavail=40G
+2026-11-18T23:35:28+0100 START ll-tq2-t12-i1 load=2.18 5.73 5.63 memavail=40G timeout=1200s memcap=37G
+2026-11-18T23:36:14+0100 END   ll-tq2-t12-i1 load=7.58 6.66 5.95 memavail=40G
+2026-11-18T23:37:34+0100 START ll-tq2-embf16-t12-i1 load=2.49 5.22 5.50 memavail=40G timeout=1200s memcap=37G
+2026-11-18T23:38:30+0100 END   ll-tq2-embf16-t12-i1 load=9.16 6.63 5.97 memavail=40G
+2026-11-18T23:40:00+0100 START ll-tq1-t12-i1 load=2.14 4.94 5.43 memavail=40G timeout=1200s memcap=37G
+2026-11-18T23:41:01+0100 END   ll-tq1-t12-i1 load=8.39 6.18 5.82 memavail=40G
+2026-11-18T23:42:21+0100 START ll-q40-t12-i1 load=2.38 4.78 5.36 memavail=40G timeout=1200s memcap=37G
+2026-11-18T23:43:29+0100 END   ll-q40-t12-i1 load=9.50 6.35 5.86 memavail=40G
+2026-11-18T23:45:09+0100 START ll-qwen-q4km-t12-i1 load=2.23 4.71 5.31 memavail=40G timeout=1200s memcap=37G
+2026-11-18T23:45:54+0100 END   ll-qwen-q4km-t12-i1 load=7.22 5.65 5.60 memavail=40G
+2026-11-18T23:47:04+0100 START bn-large-i2s-head-t12-i1 load=2.41 4.51 5.21 memavail=40G timeout=900s memcap=37G
+2026-11-18T23:47:20+0100 END   bn-large-i2s-head-t12-i1 load=4.68 4.91 5.33 memavail=40G
+2026-11-18T23:48:10+0100 START ll-large-f16-t12-i1 load=2.22 4.20 5.06 memavail=40G timeout=900s memcap=37G
+2026-11-18T23:49:06+0100 END   ll-large-f16-t12-i1 load=8.14 5.47 5.44 memavail=40G
+2026-11-18T23:50:36+0100 START ll-large-tq2-t12-i1 load=2.14 4.13 4.97 memavail=40G timeout=900s memcap=37G
+2026-11-18T23:50:53+0100 END   ll-large-tq2-t12-i1 load=4.32 4.49 5.07 memavail=40G
+2026-11-18T23:51:33+0100 START ll-large-tq1-t12-i1 load=2.28 3.94 4.86 memavail=40G timeout=900s memcap=37G
+2026-11-18T23:51:55+0100 END   ll-large-tq1-t12-i1 load=5.34 4.53 5.03 memavail=40G
+2026-11-18T23:52:46+0100 START ll-large-q40-t12-i1 load=2.38 3.84 4.77 memavail=40G timeout=900s memcap=37G
+2026-11-18T23:53:08+0100 END   ll-large-q40-t12-i1 load=5.66 4.50 4.96 memavail=40G
+2026-11-18T23:54:18+0100 START bn-i2s-head-t12-i2 load=2.22 3.72 4.66 memavail=40G timeout=1200s memcap=37G
+2026-11-18T23:55:08+0100 END   bn-i2s-head-t12-i2 load=8.09 5.09 5.07 memavail=40G
+2026-11-18T23:56:28+0100 START bn-i2s-01eb415-t12-i2 load=2.17 3.90 4.66 memavail=40G timeout=1200s memcap=37G
+2026-11-18T23:57:20+0100 END   bn-i2s-01eb415-t12-i2 load=7.85 5.18 5.05 memavail=40G
+2026-11-18T23:58:40+0100 START bn-i2s-v0-t12-i2 load=2.21 4.01 4.65 memavail=40G timeout=1200s memcap=37G
+2026-11-18T23:59:36+0100 END   bn-i2s-v0-t12-i2 load=8.77 5.55 5.14 memavail=40G
+2026-11-19T00:01:06+0100 START ll-f16-t12-i2 load=2.26 4.20 4.70 memavail=40G timeout=1800s memcap=37G
+2026-11-19T00:04:09+0100 END   ll-f16-t12-i2 load=13.02 8.38 6.23 memavail=40G
+2026-11-19T00:05:59+0100 START ll-tq2-t12-i2 load=2.23 5.85 5.55 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:06:42+0100 END   ll-tq2-t12-i2 load=7.86 6.83 5.90 memavail=40G
+2026-11-19T00:07:53+0100 START ll-tq2-embf16-t12-i2 load=2.44 5.40 5.47 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:08:47+0100 END   ll-tq2-embf16-t12-i2 load=8.13 6.50 5.84 memavail=40G
+2026-11-19T00:10:07+0100 START ll-tq1-t12-i2 load=2.33 5.04 5.38 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:11:08+0100 END   ll-tq1-t12-i2 load=8.76 6.36 5.81 memavail=40G
+2026-11-19T00:12:38+0100 START ll-q40-t12-i2 load=2.22 4.79 5.30 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:13:43+0100 END   ll-q40-t12-i2 load=9.00 6.28 5.78 memavail=40G
+2026-11-19T00:15:13+0100 START ll-qwen-q4km-t12-i2 load=2.35 4.77 5.29 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:15:57+0100 END   ll-qwen-q4km-t12-i2 load=7.34 5.75 5.60 memavail=40G
+2026-11-19T00:17:07+0100 START bn-large-i2s-head-t12-i2 load=2.39 4.59 5.21 memavail=40G timeout=900s memcap=37G
+2026-11-19T00:17:23+0100 END   bn-large-i2s-head-t12-i2 load=4.62 4.95 5.31 memavail=40G
+2026-11-19T00:18:03+0100 START ll-large-f16-t12-i2 load=2.37 4.32 5.08 memavail=40G timeout=900s memcap=37G
+2026-11-19T00:18:57+0100 END   ll-large-f16-t12-i2 load=8.06 5.57 5.47 memavail=39G
+2026-11-19T00:20:17+0100 START ll-large-tq2-t12-i2 load=2.42 4.39 5.06 memavail=40G timeout=900s memcap=37G
+2026-11-19T00:20:34+0100 END   ll-large-tq2-t12-i2 load=4.85 4.81 5.19 memavail=40G
+2026-11-19T00:21:24+0100 START ll-large-tq1-t12-i2 load=2.15 4.08 4.92 memavail=40G timeout=900s memcap=37G
+2026-11-19T00:21:45+0100 END   ll-large-tq1-t12-i2 load=5.15 4.64 5.08 memavail=40G
+2026-11-19T00:22:35+0100 START ll-large-q40-t12-i2 load=2.39 3.96 4.83 memavail=40G timeout=900s memcap=37G
+2026-11-19T00:22:57+0100 END   ll-large-q40-t12-i2 load=5.19 4.50 4.99 memavail=39G
+2026-11-19T00:23:47+0100 START bn-i2s-head-t12-i3 load=2.41 3.86 4.74 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:24:37+0100 END   bn-i2s-head-t12-i3 load=7.34 5.02 5.09 memavail=40G
+2026-11-19T00:25:48+0100 START bn-i2s-01eb415-t12-i3 load=2.44 4.01 4.73 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:26:39+0100 END   bn-i2s-01eb415-t12-i3 load=7.98 5.29 5.13 memavail=40G
+2026-11-19T00:27:59+0100 START bn-i2s-v0-t12-i3 load=2.20 4.07 4.71 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:28:52+0100 END   bn-i2s-v0-t12-i3 load=8.17 5.41 5.13 memavail=40G
+2026-11-19T00:30:22+0100 START ll-f16-t12-i3 load=2.47 4.20 4.73 memavail=40G timeout=1800s memcap=37G
+2026-11-19T00:33:16+0100 END   ll-f16-t12-i3 load=12.48 7.98 6.09 memavail=40G
+2026-11-19T00:34:56+0100 START ll-tq2-t12-i3 load=2.44 5.75 5.48 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:35:40+0100 END   ll-tq2-t12-i3 load=7.81 6.70 5.82 memavail=40G
+2026-11-19T00:37:00+0100 START ll-tq2-embf16-t12-i3 load=2.17 5.17 5.35 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:37:54+0100 END   ll-tq2-embf16-t12-i3 load=8.50 6.44 5.78 memavail=40G
+2026-11-19T00:39:14+0100 START ll-tq1-t12-i3 load=2.35 4.95 5.31 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:40:16+0100 END   ll-tq1-t12-i3 load=8.80 6.34 5.76 memavail=40G
+2026-11-19T00:41:46+0100 START ll-q40-t12-i3 load=2.12 4.79 5.27 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:42:52+0100 END   ll-q40-t12-i3 load=8.96 6.28 5.75 memavail=40G
+2026-11-19T00:44:22+0100 START ll-qwen-q4km-t12-i3 load=2.31 4.73 5.25 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:45:05+0100 END   ll-qwen-q4km-t12-i3 load=7.29 5.67 5.54 memavail=40G
+2026-11-19T00:46:15+0100 START bn-large-i2s-head-t12-i3 load=2.34 4.51 5.14 memavail=40G timeout=900s memcap=37G
+2026-11-19T00:46:31+0100 END   bn-large-i2s-head-t12-i3 load=4.70 4.93 5.27 memavail=40G
+2026-11-19T00:47:11+0100 START ll-large-f16-t12-i3 load=2.47 4.32 5.05 memavail=40G timeout=900s memcap=37G
+2026-11-19T00:48:05+0100 END   ll-large-f16-t12-i3 load=8.33 5.66 5.47 memavail=40G
+2026-11-19T00:49:25+0100 START ll-large-tq2-t12-i3 load=2.44 4.40 5.04 memavail=40G timeout=900s memcap=37G
+2026-11-19T00:49:41+0100 END   ll-large-tq2-t12-i3 load=4.70 4.81 5.16 memavail=40G
+2026-11-19T00:50:31+0100 START ll-large-tq1-t12-i3 load=2.32 4.14 4.92 memavail=40G timeout=900s memcap=37G
+2026-11-19T00:50:54+0100 END   ll-large-tq1-t12-i3 load=5.76 4.81 5.12 memavail=40G
+2026-11-19T00:51:54+0100 START ll-large-q40-t12-i3 load=2.18 3.96 4.80 memavail=40G timeout=900s memcap=37G
+2026-11-19T00:52:16+0100 END   ll-large-q40-t12-i3 load=5.26 4.54 4.98 memavail=40G
+2026-11-19T00:53:06+0100 START bn-i2s-head-t2-i1 load=2.32 3.86 4.72 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:54:29+0100 END   bn-i2s-head-t2-i1 load=2.39 3.54 4.54 memavail=40G
+2026-11-19T00:54:59+0100 START bn-i2s-01eb415-t2-i1 load=1.60 3.23 4.40 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:56:13+0100 END   bn-i2s-01eb415-t2-i1 load=2.23 3.04 4.24 memavail=40G
+2026-11-19T00:56:43+0100 START bn-i2s-v0-t2-i1 load=1.35 2.75 4.10 memavail=40G timeout=1200s memcap=37G
+2026-11-19T00:58:18+0100 END   bn-i2s-v0-t2-i1 load=2.17 2.64 3.93 memavail=40G
+2026-11-19T00:58:48+0100 START ll-f16-t2-i1 load=1.65 2.47 3.83 memavail=40G timeout=1800s memcap=37G
+2026-11-19T01:04:04+0100 END   ll-f16-t2-i1 load=2.58 2.53 3.45 memavail=40G
+2026-11-19T01:04:34+0100 START ll-tq2-t2-i1 load=1.71 2.31 3.35 memavail=40G timeout=1200s memcap=37G
+2026-11-19T01:05:57+0100 END   ll-tq2-t2-i1 load=2.27 2.36 3.27 memavail=39G
+2026-11-19T01:06:27+0100 START ll-tq2-embf16-t2-i1 load=1.38 2.13 3.17 memavail=39G timeout=1200s memcap=36G
+2026-11-19T01:07:59+0100 END   ll-tq2-embf16-t2-i1 load=1.94 2.12 3.06 memavail=39G
+2026-11-19T01:08:29+0100 START ll-tq1-t2-i1 load=1.44 1.99 2.99 memavail=39G timeout=1200s memcap=36G
+2026-11-19T01:11:01+0100 END   ll-tq1-t2-i1 load=2.37 2.17 2.90 memavail=39G
+2026-11-19T01:11:31+0100 START ll-q40-t2-i1 load=1.44 1.96 2.81 memavail=39G timeout=1200s memcap=36G
+2026-11-19T01:13:33+0100 END   ll-q40-t2-i1 load=2.25 2.12 2.76 memavail=40G
+2026-11-19T01:14:03+0100 START ll-qwen-q4km-t2-i1 load=1.42 1.93 2.68 memavail=40G timeout=1200s memcap=37G
+2026-11-19T01:15:14+0100 END   ll-qwen-q4km-t2-i1 load=2.15 2.05 2.66 memavail=39G
+2026-11-19T01:15:44+0100 START bn-large-i2s-head-t2-i1 load=1.30 1.85 2.58 memavail=40G timeout=900s memcap=37G
+2026-11-19T01:16:10+0100 END   bn-large-i2s-head-t2-i1 load=1.83 1.93 2.58 memavail=40G
+2026-11-19T01:16:40+0100 START ll-large-f16-t2-i1 load=1.10 1.74 2.50 memavail=40G timeout=900s memcap=37G
+2026-11-19T01:17:58+0100 END   ll-large-f16-t2-i1 load=1.86 1.85 2.47 memavail=39G
+2026-11-19T01:18:28+0100 START ll-large-tq2-t2-i1 load=1.18 1.68 2.40 memavail=40G timeout=900s memcap=37G
+2026-11-19T01:18:58+0100 END   ll-large-tq2-t2-i1 load=1.67 1.75 2.40 memavail=40G
+2026-11-19T01:19:28+0100 START ll-large-tq1-t2-i1 load=1.01 1.58 2.32 memavail=40G timeout=900s memcap=37G
+2026-11-19T01:20:20+0100 END   ll-large-tq1-t2-i1 load=1.90 1.72 2.32 memavail=39G
+2026-11-19T01:20:50+0100 START ll-large-q40-t2-i1 load=1.23 1.57 2.25 memavail=40G timeout=900s memcap=37G
+2026-11-19T01:21:30+0100 END   ll-large-q40-t2-i1 load=1.74 1.66 2.25 memavail=39G
+2026-11-19T01:22:00+0100 START bn-i2s-head-t2-i2 load=1.05 1.50 2.18 memavail=40G timeout=1200s memcap=37G
+2026-11-19T01:23:23+0100 END   bn-i2s-head-t2-i2 load=1.95 1.68 2.18 memavail=39G
+2026-11-19T01:23:53+0100 START bn-i2s-01eb415-t2-i2 load=1.18 1.52 2.11 memavail=39G timeout=1200s memcap=36G
+2026-11-19T01:25:07+0100 END   bn-i2s-01eb415-t2-i2 load=1.87 1.67 2.12 memavail=39G
+2026-11-19T01:25:37+0100 START bn-i2s-v0-t2-i2 load=1.32 1.55 2.06 memavail=40G timeout=1200s memcap=37G
+2026-11-19T01:27:11+0100 END   bn-i2s-v0-t2-i2 load=2.10 1.77 2.09 memavail=39G
+2026-11-19T01:27:41+0100 START ll-f16-t2-i2 load=1.27 1.59 2.02 memavail=40G timeout=1800s memcap=37G
+2026-11-19T01:32:57+0100 END   ll-f16-t2-i2 load=2.31 2.15 2.14 memavail=39G
+2026-11-19T01:33:27+0100 START ll-tq2-t2-i2 load=1.54 1.98 2.08 memavail=40G timeout=1200s memcap=37G
+2026-11-19T01:34:50+0100 END   ll-tq2-t2-i2 load=2.06 2.03 2.09 memavail=39G
+2026-11-19T01:35:20+0100 START ll-tq2-embf16-t2-i2 load=1.30 1.85 2.03 memavail=39G timeout=1200s memcap=36G
+2026-11-19T01:36:52+0100 END   ll-tq2-embf16-t2-i2 load=2.02 1.95 2.04 memavail=39G
+2026-11-19T01:37:22+0100 START ll-tq1-t2-i2 load=1.35 1.79 1.99 memavail=40G timeout=1200s memcap=37G
+2026-11-19T01:39:54+0100 END   ll-tq1-t2-i2 load=2.38 2.02 2.04 memavail=39G
+2026-11-19T01:40:24+0100 START ll-q40-t2-i2 load=1.50 1.85 1.98 memavail=40G timeout=1200s memcap=37G
+2026-11-19T01:42:26+0100 END   ll-q40-t2-i2 load=2.22 2.01 2.02 memavail=39G
+2026-11-19T01:42:56+0100 START ll-qwen-q4km-t2-i2 load=1.40 1.83 1.96 memavail=39G timeout=1200s memcap=36G
+2026-11-19T01:44:06+0100 END   ll-qwen-q4km-t2-i2 load=2.17 1.97 2.00 memavail=39G
+2026-11-19T01:44:36+0100 START bn-large-i2s-head-t2-i2 load=1.37 1.79 1.94 memavail=39G timeout=900s memcap=36G
+2026-11-19T01:45:02+0100 END   bn-large-i2s-head-t2-i2 load=1.58 1.81 1.95 memavail=39G
+2026-11-19T01:45:32+0100 START ll-large-f16-t2-i2 load=1.02 1.65 1.89 memavail=39G timeout=900s memcap=36G
+2026-11-19T01:46:50+0100 END   ll-large-f16-t2-i2 load=1.81 1.75 1.91 memavail=39G
+2026-11-19T01:47:20+0100 START ll-large-tq2-t2-i2 load=1.15 1.60 1.85 memavail=39G timeout=900s memcap=36G
+2026-11-19T01:47:49+0100 END   ll-large-tq2-t2-i2 load=1.70 1.68 1.87 memavail=39G
+2026-11-19T01:48:19+0100 START ll-large-tq1-t2-i2 load=1.14 1.55 1.82 memavail=39G timeout=900s memcap=36G
+2026-11-19T01:49:11+0100 END   ll-large-tq1-t2-i2 load=1.63 1.62 1.83 memavail=39G
+2026-11-19T01:49:41+0100 START ll-large-q40-t2-i2 load=1.04 1.48 1.78 memavail=39G timeout=900s memcap=36G
+2026-11-19T01:50:21+0100 END   ll-large-q40-t2-i2 load=1.55 1.56 1.80 memavail=39G
+2026-11-19T01:50:51+0100 START bn-i2s-head-t2-i3 load=1.18 1.48 1.76 memavail=39G timeout=1200s memcap=36G
+2026-11-19T01:52:14+0100 END   bn-i2s-head-t2-i3 load=1.96 1.66 1.80 memavail=39G
+2026-11-19T01:52:44+0100 START bn-i2s-01eb415-t2-i3 load=1.26 1.51 1.75 memavail=39G timeout=1200s memcap=36G
+2026-11-19T01:53:58+0100 END   bn-i2s-01eb415-t2-i3 load=2.11 1.72 1.81 memavail=39G
+2026-11-19T01:54:28+0100 START bn-i2s-v0-t2-i3 load=1.55 1.62 1.77 memavail=39G timeout=1200s memcap=36G
+2026-11-19T01:56:02+0100 END   bn-i2s-v0-t2-i3 load=2.37 1.89 1.86 memavail=39G
+2026-11-19T01:56:32+0100 START ll-f16-t2-i3 load=1.43 1.71 1.80 memavail=39G timeout=1800s memcap=36G
+2026-11-19T02:01:50+0100 END   ll-f16-t2-i3 load=2.63 2.36 2.06 memavail=39G
+2026-11-19T02:02:20+0100 START ll-tq2-t2-i3 load=1.60 2.13 1.99 memavail=39G timeout=1200s memcap=36G
+2026-11-19T02:03:43+0100 END   ll-tq2-t2-i3 load=2.31 2.22 2.03 memavail=39G
+2026-11-19T02:04:13+0100 START ll-tq2-embf16-t2-i3 load=1.45 2.02 1.97 memavail=39G timeout=1200s memcap=36G
+2026-11-19T02:05:45+0100 END   ll-tq2-embf16-t2-i3 load=2.09 2.09 2.00 memavail=39G
+2026-11-19T02:06:15+0100 START ll-tq1-t2-i3 load=1.33 1.90 1.94 memavail=39G timeout=1200s memcap=36G
+2026-11-19T02:08:46+0100 END   ll-tq1-t2-i3 load=2.09 2.02 1.99 memavail=39G
+2026-11-19T02:09:16+0100 START ll-q40-t2-i3 load=1.49 1.87 1.94 memavail=39G timeout=1200s memcap=36G
+2026-11-19T02:11:18+0100 END   ll-q40-t2-i3 load=2.13 1.99 1.98 memavail=39G
+2026-11-19T02:11:48+0100 START ll-qwen-q4km-t2-i3 load=1.40 1.83 1.93 memavail=39G timeout=1200s memcap=36G
+2026-11-19T02:12:59+0100 END   ll-qwen-q4km-t2-i3 load=2.01 1.94 1.96 memavail=39G
+2026-11-19T02:13:29+0100 START bn-large-i2s-head-t2-i3 load=1.51 1.83 1.92 memavail=39G timeout=900s memcap=36G
+2026-11-19T02:13:55+0100 END   bn-large-i2s-head-t2-i3 load=1.72 1.85 1.93 memavail=39G
+2026-11-19T02:14:25+0100 START ll-large-f16-t2-i3 load=1.11 1.69 1.87 memavail=40G timeout=900s memcap=37G
+2026-11-19T02:15:43+0100 END   ll-large-f16-t2-i3 load=1.92 1.82 1.91 memavail=39G
+2026-11-19T02:16:13+0100 START ll-large-tq2-t2-i3 load=1.35 1.69 1.86 memavail=39G timeout=900s memcap=36G
+2026-11-19T02:16:42+0100 END   ll-large-tq2-t2-i3 load=1.61 1.72 1.87 memavail=39G
+2026-11-19T02:17:12+0100 START ll-large-tq1-t2-i3 load=1.20 1.61 1.82 memavail=39G timeout=900s memcap=36G
+2026-11-19T02:18:04+0100 END   ll-large-tq1-t2-i3 load=1.79 1.70 1.84 memavail=40G
+2026-11-19T02:18:34+0100 START ll-large-q40-t2-i3 load=1.16 1.56 1.79 memavail=39G timeout=900s memcap=36G
+2026-11-19T02:19:14+0100 END   ll-large-q40-t2-i3 load=1.62 1.63 1.81 memavail=39G
+2026-11-19T02:20:44+0100 START energy-bn-i2s-head-t6 load=0.59 1.30 1.67 memavail=39G timeout=900s memcap=36G
+2026-11-19T02:21:17+0100 END   energy-bn-i2s-head-t6 load=2.86 1.78 1.82 memavail=39G
+2026-11-19T02:21:47+0100 START energy-ll-f16-t6 load=1.73 1.61 1.76 memavail=39G timeout=900s memcap=36G
+2026-11-19T02:23:42+0100 END   energy-ll-f16-t6 load=5.63 3.11 2.30 memavail=39G
+2026-11-19T02:24:42+0100 START energy-ll-tq2-embf16-t6 load=2.17 2.57 2.16 memavail=39G timeout=900s memcap=36G
+2026-11-19T02:25:21+0100 END   energy-ll-tq2-embf16-t6 load=4.16 3.04 2.33 memavail=39G
+2026-11-19T02:26:01+0100 START energy-ll-qwen-q4km-t6 load=2.13 2.66 2.23 memavail=39G timeout=900s memcap=36G
+2026-11-19T02:26:28+0100 END   energy-ll-qwen-q4km-t6 load=3.73 2.99 2.36 memavail=39G
+2026-11-19T02:26:28+0100 night done
+2026-11-19T02:26:28+0100 restore: starting the local inference server (exit code was 0)
+ Container inference-server Starting 
+ Container inference-server Started 
+2026-11-19T02:27:40+0100 restore: the local inference server healthy and the inference gateway 'main' answers

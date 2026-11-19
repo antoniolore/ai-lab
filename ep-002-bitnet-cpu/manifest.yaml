@@ -1,0 +1,83 @@
+# ep-002 — bitnet.cpp on a CPU ("100B on a single CPU", "up to 6.17x faster")
+# Provenance: verified = checked against a file in this folder (path given) or at the source on the date given;
+# declared = stated by a third party (source given). Full pins and changelog: PROTOCOL.md § 2 and § Changelog.
+episode: ep-002-bitnet-cpu
+title: "bitnet.cpp: 100B on one CPU, up to 6.17× faster? A never-trained model, against 16-bit weights"
+verdict: "Misleading"
+package_version: 1.0.0
+package_date: 2026-11-19
+articles:
+  # filled in automatically after each release: the trailing link comments mark the values (see README.md)
+  part_a:
+    date: 2026-11-25
+    medium: null  # link:ep02-a-medium
+    substack: null  # link:ep02-a-substack
+  part_b1:
+    date: 2026-11-26
+    medium: null  # link:ep02-b1-medium
+    substack: null  # link:ep02-b1-substack
+  part_b2:
+    date: 2026-11-27
+    medium: null  # link:ep02-b2-medium
+    substack: null  # link:ep02-b2-substack
+repo: https://github.com/antoniolore/ai-lab
+
+claim:
+  source: "a post on X, 2026-11-17"
+  url: "https://x.com/byteonai/status/2122717876054310952"
+  quoted: ["It can run a 100B-parameter BitNet model on a single CPU, no GPU needed.", "Up to 6.17x faster on x86 CPUs", "Up to 82.2% less energy"]
+  primary_sources:
+    - "microsoft/BitNet README, commit 0b341e5 (2026-07-27), read 2026-11-18"
+    - "arXiv 2410.16144 v2 (Tables 4-6, Appendix A: the tested models are dummy setups)"
+    - "arXiv 2502.11880 v1 (Appendix E, Table 7: quantised baselines)"
+    - "arXiv 2504.12285 v2 (Table 2); model card microsoft/bitnet-b1.58-2B-4T"
+  declared_x86: {device: "Intel i7-13700H", top: "6.17x, 13B dummy, llama.cpp FP16 1.78 -> bitnet.cpp 10.99 tok/s", dummy_100b: "1.70 tok/s"}
+  declared_arm: {device: "Apple M2 Ultra", dummy_100b: "6.58 tok/s"}
+
+protocol:
+  file: PROTOCOL.md
+  written: 2026-11-18
+  note: "Written after the triage (TRIAGE.md) and before any measurement; amendments in its changelog."
+
+dates:
+  desktop_night: {id: 2026-11-18, window: "2026-11-18 22:01 -> 2026-11-19 02:26 CET", conditions: "local inference server stopped, other services running; 134 runs, 0 failed"}   # verified: results/desktop/2026-11-18/night.log
+  mac_first: {id: 2026-11-18, window: "2026-11-18", conditions: "apps open; used only for the sanity checks in qc/"}
+  mac_clean: {id: clean-2026-11-19, window: "2026-11-19 14:11-15:45 CET", conditions: "user apps closed, two media-analysis processes paused; reference for every Mac speed figure"}   # verified: results/mac/clean-2026-11-19/run.log
+
+hardware:
+  desktop:
+    cpu: "Intel Core i7-8700K, 6 cores / 12 threads, AVX2, max 4.7 GHz, L3 12 MiB"   # verified: results/desktop/2026-11-18/env.txt
+    memory: "62 GB DDR4"                                                              # verified: env.txt (free -g)
+    os: "Linux 7.2.5"                                                                 # verified: env.txt
+    isolation: "container, --network none, --cpuset-cpus 0-11, memory cap = MemAvailable - 3 GiB, no swap"   # verified: scripts/desktop-night.sh
+  macbook-pro-m4-max:
+    model_identifier: Mac16,6                       # verified: results/mac/clean-2026-11-19/env-pre.txt
+    chip: "Apple M4 Max, 12 performance + 4 efficiency cores"   # verified: env-pre.txt
+    memory: "48 GB unified (51539607552 bytes)"     # verified: env-pre.txt
+    os: "macOS 27.0.1 (26A434)"                     # verified: env-pre.txt
+    gpu: "not used (CPU only; stock llama.cpp with -dev none)"
+
+software:
+  llama_cpp_stock:
+    release: b12503
+    commit: 4577932fab595eaa8b27ad71734d5de1f3c07d8c
+    binaries:   # official prebuilt CPU binaries, sha256 = GitHub release digests; verified: env/sha256-downloads.txt
+      llama-b12503-bin-ubuntu-x64.tar.gz: 0d585f8a78ffdfdc4f6303a089aaa1379c15323b33483b6548c85c774a376a9d
+      llama-b12503-bin-macos-arm64.tar.gz: e88d7e91198d0de6ceb3d33711ac01ee0d5b519cd9ba4e81854e3bba84f22214
+  bitnet_cpp:
+    repo: https://github.com/microsoft/BitNet
+    builds:
+      head: {commit: 0b341e5, date: 2026-07-27, use: "x86 reference; invalid output on Apple Silicon"}
+      v0: {commit: 404980e, date: 2025-06-03, use: "Mac reference (last commit that works on the M4 Max CPU)"}
+      01eb415: {commit: 01eb415, date: 2026-03-10, use: "x86 only, for the record"}
+    kernels: "I2_S (-DBITNET_X86_TL2=OFF / -DBITNET_ARM_TL1=OFF), clang 18 (Linux container), Apple clang 21 (Mac)"
+    patches: [patches/01-i2s-src1_cont.patch, patches/02-01eb415-x86-const.patch]
+
+models:   # weights are not in this repository
+  - {name: "BitNet b1.58 2B4T, I2_S (official GGUF)", repo: microsoft/bitnet-b1.58-2B-4T-gguf, file: ggml-model-i2_s.gguf, bytes: 1187801280, sha256: 4221b252fdd5fd25e15847adfeb5ee88886506ba50b8a34548374492884c2162, licence: MIT}
+  - {name: "BitNet b1.58 2B4T, BF16", repo: microsoft/bitnet-b1.58-2B-4T-bf16, file: model.safetensors, bytes: 4825679400, sha256: 529637ff6dab1f5890767356928693f69ffe61d3b6040a43de9306b37bfd5ae1, licence: MIT, note: "converted to F16, TQ2_0, TQ2_0 with F16 embeddings, TQ1_0, Q4_0 with stock llama.cpp b12503 + patches/03-mainline-convert-2b4t-proxy.patch; hashes of the converted files in env/sha256-night.txt"}
+  - {name: "bitnet_b1_58-large (0.7B)", repo: 1bitLLM/bitnet_b1_58-large, licence: MIT, note: "same-model pair, runs correctly in both engines; converted files in env/sha256-night.txt"}
+  - {name: "Qwen2.5-1.5B-Instruct Q4_K_M", repo: Qwen/Qwen2.5-1.5B-Instruct-GGUF, file: qwen2.5-1.5b-instruct-q4_k_m.gguf, bytes: 1117320736, sha256: 6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e, licence: Apache-2.0}
+  - {name: "100B random-weight layout", generator: scripts/gen_dummy_bitnet.py, files: {100B-tq2_0.gguf: "26.3 GB", 100B-i2_s.gguf: "25.5 GB"}, note: "random ternary weights, timing only; sha256 in env/sha256-night.txt"}
+
+redactions: "Paths, user names, host name, lists of other services/processes/apps, and the host-specific stop/restore code of the local inference server (see README.md § Redactions). No measured value was changed."

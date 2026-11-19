@@ -1,0 +1,26 @@
+--- $LAB/src/llama.cpp-b12503/gguf-py/gguf/tensor_mapping.py	2026-11-18 08:56:20.000000000 +0100
++++ gguf-py/gguf/tensor_mapping.py	2026-11-18 13:31:56.895927440 +0100
+@@ -1453,10 +1453,12 @@
+ 
+         MODEL_TENSOR.ATTN_SUB_NORM: (
+             "model.layers.{bid}.self_attn.inner_attn_ln",  # bitnet
++            "model.layers.{bid}.self_attn.attn_sub_norm",  # bitnet 2B4T (lab patch, speed proxy only)
+         ),
+ 
+         MODEL_TENSOR.FFN_SUB_NORM: (
+             "model.layers.{bid}.mlp.ffn_layernorm",  # bitnet
++            "model.layers.{bid}.mlp.ffn_sub_norm",  # bitnet 2B4T (lab patch, speed proxy only)
+         ),
+ 
+         MODEL_TENSOR.DEC_ATTN_NORM: (
+--- $LAB/src/llama.cpp-b12503/conversion/bitnet.py	2026-11-18 08:56:20.000000000 +0100
++++ conversion/bitnet.py	2026-11-18 13:32:25.292582970 +0100
+@@ -14,7 +14,7 @@
+     model_arch = gguf.MODEL_ARCH.BITNET
+ 
+     def set_vocab(self):
+-        self._set_vocab_sentencepiece()
++        self._set_vocab_gpt2()  # lab patch: 2B4T ships a Llama-3 BPE tokenizer.json, no tokenizer.model
+ 
+     def set_gguf_parameters(self):
+         super().set_gguf_parameters()

@@ -1,0 +1,5 @@
+4221b252fdd5fd25e15847adfeb5ee88886506ba50b8a34548374492884c2162  models/2b4t-gguf/ggml-model-i2_s.gguf
+529637ff6dab1f5890767356928693f69ffe61d3b6040a43de9306b37bfd5ae1  models/2b4t-bf16/model.safetensors
+6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e  models/qwen/qwen2.5-1.5b-instruct-q4_k_m.gguf
+e88d7e91198d0de6ceb3d33711ac01ee0d5b519cd9ba4e81854e3bba84f22214  bin/dl/llama-b12503-bin-macos-arm64.tar.gz
+0d585f8a78ffdfdc4f6303a089aaa1379c15323b33483b6548c85c774a376a9d  bin/dl/llama-b12503-bin-ubuntu-x64.tar.gz

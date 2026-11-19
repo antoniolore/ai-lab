@@ -12,6 +12,9 @@ reproducible tests on stated hardware. Every published number links back to a ro
 | ep01 Lab notes 1 | Setup, Mac and CPU baselines | <!-- link:ep01-b1-medium -->[Medium](https://medium.com/@antonio.lore/lab-notes-part-1-rerunning-the-n-cpu-moe-claim-setup-mac-and-cpu-baselines-a82291e02935)<!-- /link --> | <!-- link:ep01-b1-substack -->[Substack](https://antoniolore.substack.com/p/lab-notes-part-1-rerunning-the-n)<!-- /link --> | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
 | ep01 Lab notes 2 | RTX 3080 at 12 GB and emulated 8 GB | <!-- link:ep01-b2-medium -->[Medium](https://medium.com/@antonio.lore/lab-notes-part-2-the-rtx-3080-at-12-gb-and-emulated-8-gb-9bf333287983)<!-- /link --> | <!-- link:ep01-b2-substack -->[Substack](https://antoniolore.substack.com/p/lab-notes-part-2-the-rtx-3080-at)<!-- /link --> | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
 | ep01 Lab notes 3 | Quality, `--fit` default, verdict | <!-- link:ep01-b3-medium -->out 2026-11-20<!-- /link --> | <!-- link:ep01-b3-substack -->out 2026-11-20<!-- /link --> | [`ep-001-moe-offload/`](ep-001-moe-offload/) |
+| ep02 Part A | bitnet.cpp: "100B on one CPU, up to 6.17x faster", rerun on two CPUs. Verdict: Misleading | <!-- link:ep02-a-medium -->out 2026-11-25<!-- /link --> | <!-- link:ep02-a-substack -->out 2026-11-25<!-- /link --> | [`ep-002-bitnet-cpu/`](ep-002-bitnet-cpu/) |
+| ep02 Lab notes 1 | Sources, protocol, setup | <!-- link:ep02-b1-medium -->out 2026-11-26<!-- /link --> | <!-- link:ep02-b1-substack -->out 2026-11-26<!-- /link --> | [`ep-002-bitnet-cpu/`](ep-002-bitnet-cpu/) |
+| ep02 Lab notes 2 | Results on the i7-8700K and the M4 Max, the 100B layout, energy, verdict | <!-- link:ep02-b2-medium -->out 2026-11-27<!-- /link --> | <!-- link:ep02-b2-substack -->out 2026-11-27<!-- /link --> | [`ep-002-bitnet-cpu/`](ep-002-bitnet-cpu/) |
 
 Links marked "out <date>" are filled in automatically after each release. Every code or data folder in this repository has a README with
 the links to its articles.
@@ -46,7 +49,7 @@ Why: CC BY 4.0 is the usual licence for open research data: anyone may reuse, ch
 commercially, as long as the source is credited — which is exactly what a fact-checking project wants (traceable reuse,
 no barrier). MIT for scripts because CC licences are not designed for software; MIT is short, permissive and compatible with
 llama.cpp (MIT) and the model licences (Apache-2.0). Third-party material keeps its own terms: model outputs quoted in the logs
-come from Qwen3.6 (Apache-2.0); llama.cpp log lines are tool output; the quoted claim belongs to its publisher and is quoted
+come from Qwen3.6 (Apache-2.0) and, in ep-002, from BitNet b1.58 models (MIT); llama.cpp log lines are tool output; the quoted claim belongs to its publisher and is quoted
 for commentary.
 
 ## Corrections

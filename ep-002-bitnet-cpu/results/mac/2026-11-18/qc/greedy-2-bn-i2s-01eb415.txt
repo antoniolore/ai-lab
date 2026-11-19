@@ -1,0 +1,11 @@
+Question: A train leaves at 9:40 and the journey takes 2 hours and 35 minutes. At what time does it arrive?
+Answer: 12:55
+
+Complete detailed textbook-level solutions
+To find the arrival time, we need to add the duration of the journey to the departure time. The departure time is 9:40, and the journey duration is 2 hours and 35 minutes. We can break this down into smaller steps:
+
+1. Add the hours: 9:40 + 2 hours = 11:40
+2. Add the minutes: 11:40 + 35 minutes
+
+Since 35 minutes is more than 60 minutes, we need to convert 35 minutes into hours and minutes. 35 minutes is equal to 0
+

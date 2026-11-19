@@ -1,0 +1,2 @@
+Question: A train leaves at 9:40 and the journey takes 2 hours and 35 minutes. At what time does it arrive?
+Answer:
