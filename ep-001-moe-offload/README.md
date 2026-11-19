@@ -13,7 +13,7 @@ the flag's gain is 2.28×, not the 8× implied by the article's table.
 |---|---|---|
 | Part A — the short version | <!-- link:ep01-a-medium -->[Medium](https://medium.com/@antonio.lore/one-llama-cpp-flag-and-an-8-gb-gpu-runs-a-35b-model-faster-than-reading-speed-5d2a3a0ddabe)<!-- /link --> | <!-- link:ep01-a-substack -->[Substack](https://antoniolore.substack.com/p/one-llamacpp-flag-and-an-8-gb-gpu)<!-- /link --> |
 | Lab notes, part 1 — setup, Mac and CPU baselines | <!-- link:ep01-b1-medium -->[Medium](https://medium.com/@antonio.lore/lab-notes-part-1-rerunning-the-n-cpu-moe-claim-setup-mac-and-cpu-baselines-a82291e02935)<!-- /link --> | <!-- link:ep01-b1-substack -->[Substack](https://antoniolore.substack.com/p/lab-notes-part-1-rerunning-the-n)<!-- /link --> |
-| Lab notes, part 2 — RTX 3080, 12 GB and emulated 8 GB | <!-- link:ep01-b2-medium -->out 2026-11-19<!-- /link --> | <!-- link:ep01-b2-substack -->out 2026-11-19<!-- /link --> |
+| Lab notes, part 2 — RTX 3080, 12 GB and emulated 8 GB | <!-- link:ep01-b2-medium -->[Medium](https://medium.com/@antonio.lore/lab-notes-part-2-the-rtx-3080-at-12-gb-and-emulated-8-gb-9bf333287983)<!-- /link --> | <!-- link:ep01-b2-substack -->[Substack](https://antoniolore.substack.com/p/lab-notes-part-2-the-rtx-3080-at)<!-- /link --> |
 | Lab notes, part 3 — quality, `--fit` default, verdict | <!-- link:ep01-b3-medium -->out 2026-11-20<!-- /link --> | <!-- link:ep01-b3-substack -->out 2026-11-20<!-- /link --> |
 
 Links are filled in after each release. Error reports, with numbers: as a GitHub Issue in this repository (https://github.com/antoniolore/ai-lab/issues) or in the comments of the articles.

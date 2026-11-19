@@ -19,8 +19,8 @@ articles:
     substack: "https://antoniolore.substack.com/p/lab-notes-part-1-rerunning-the-n"  # link:ep01-b1-substack
   part_b2:
     date: 2026-11-19
-    medium: null  # link:ep01-b2-medium
-    substack: null  # link:ep01-b2-substack
+    medium: "https://medium.com/@antonio.lore/lab-notes-part-2-the-rtx-3080-at-12-gb-and-emulated-8-gb-9bf333287983"  # link:ep01-b2-medium
+    substack: "https://antoniolore.substack.com/p/lab-notes-part-2-the-rtx-3080-at"  # link:ep01-b2-substack
   part_b3:
     date: 2026-11-20
     medium: null  # link:ep01-b3-medium
