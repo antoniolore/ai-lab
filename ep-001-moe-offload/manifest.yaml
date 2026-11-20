@@ -23,8 +23,8 @@ articles:
     substack: "https://antoniolore.substack.com/p/lab-notes-part-2-the-rtx-3080-at"  # link:ep01-b2-substack
   part_b3:
     date: 2026-11-20
-    medium: null  # link:ep01-b3-medium
-    substack: null  # link:ep01-b3-substack
+    medium: "https://medium.com/@antonio.lore/lab-notes-part-3-answer-quality-the-fit-default-and-the-verdict-76a988537da4"  # link:ep01-b3-medium
+    substack: "https://antoniolore.substack.com/p/lab-notes-part-3-answer-quality-the"  # link:ep01-b3-substack
 repo: https://github.com/antoniolore/ai-lab
 
 claim:
