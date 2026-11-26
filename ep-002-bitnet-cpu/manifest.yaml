@@ -15,7 +15,7 @@ articles:
   part_b1:
     date: 2026-11-26
     medium: null  # link:ep02-b1-medium
-    substack: null  # link:ep02-b1-substack
+    substack: "https://antoniolore.substack.com/p/lab-notes-part-1-where-100b-617x"  # link:ep02-b1-substack
   part_b2:
     date: 2026-11-27
     medium: null  # link:ep02-b2-medium
