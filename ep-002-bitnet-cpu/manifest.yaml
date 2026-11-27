@@ -18,8 +18,8 @@ articles:
     substack: "https://antoniolore.substack.com/p/lab-notes-part-1-where-100b-617x"  # link:ep02-b1-substack
   part_b2:
     date: 2026-11-27
-    medium: null  # link:ep02-b2-medium
-    substack: null  # link:ep02-b2-substack
+    medium: "https://medium.com/@antonio.lore/lab-notes-part-2-results-on-the-i7-8700k-and-the-m4-max-the-100b-layout-energy-and-the-verdict-ad820f9a6bd0"  # link:ep02-b2-medium
+    substack: "https://antoniolore.substack.com/p/lab-notes-part-2-results-on-the-i7"  # link:ep02-b2-substack
 repo: https://github.com/antoniolore/ai-lab
 
 claim:

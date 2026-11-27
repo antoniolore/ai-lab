@@ -16,7 +16,7 @@ at 1.15 tok/s on the i7-8700K and 6.7 / 6.1 tok/s on the M4 Max, in both engines
 |---|---|---|
 | Part A — the short version | <!-- link:ep02-a-medium -->out 2026-11-25<!-- /link --> | <!-- link:ep02-a-substack -->[Substack](https://antoniolore.substack.com/p/bitnetcpp-100b-on-one-cpu-up-to-617)<!-- /link --> |
 | Lab notes, part 1 — sources, protocol, setup | <!-- link:ep02-b1-medium -->out 2026-11-26<!-- /link --> | <!-- link:ep02-b1-substack -->[Substack](https://antoniolore.substack.com/p/lab-notes-part-1-where-100b-617x)<!-- /link --> |
-| Lab notes, part 2 — results, the 100B layout, energy, verdict | <!-- link:ep02-b2-medium -->out 2026-11-27<!-- /link --> | <!-- link:ep02-b2-substack -->out 2026-11-27<!-- /link --> |
+| Lab notes, part 2 — results, the 100B layout, energy, verdict | <!-- link:ep02-b2-medium -->[Medium](https://medium.com/@antonio.lore/lab-notes-part-2-results-on-the-i7-8700k-and-the-m4-max-the-100b-layout-energy-and-the-verdict-ad820f9a6bd0)<!-- /link --> | <!-- link:ep02-b2-substack -->[Substack](https://antoniolore.substack.com/p/lab-notes-part-2-results-on-the-i7)<!-- /link --> |
 
 Links are filled in after each release. Error reports, with numbers: as a GitHub Issue in this repository (https://github.com/antoniolore/ai-lab/issues) or in the comments of the articles.
 
